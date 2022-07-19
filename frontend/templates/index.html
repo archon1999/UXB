@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Universal Xizmatlar Byurosi
+{% endblock %}
+
+{% block content %}
+<!-- Text animation start -->
+<section class="text__animation">
+  <div class="containerr">
+    <marquee behavior="scroll" direction="left">Xurmatli foydalanuvchi agar siz qarz olish uchun ariza qoldirmoqchi
+      bo'lsangiz, avvalo saytimizdan ro'yhatdan o'ting, o'shandan keyin sizga kalit beriladi va o'sha kalit orqali siz
+      ariza qoldirishingiz va to'lovlarni anashu kalitni kiritgan xolda amalga oshirishingiz mumkin bo'ladi!</marquee>
+  </div>
+</section>
+<!-- Text animation end -->
+
+<!-- Head content start -->
+<section class="head-content">
+  <div class="head-container containerr">
+    <div class="head-content_text">
+      <h1>QULAY SHARTLARDA UZOQ MUDDATGA <span class="kredit_oling">QARZ OLING</span></h1>
+      <div class="char-block">
+        <p class="char">
+          <span>Taklif</span> <br>
+          <font>0%(foizsiz)</font>
+        </p>
+        <p class="char">
+          <span>Pul</span> <br>
+          <font>1 milliard so'mgacha</font>
+        </p>
+      </div>
+      <button type="button" class="but btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-btn="">
+        <font>Qarz olish</font>
+      </button>
+    </div>
+    <img class="head-img" src="/static/images/uxb.png" alt="headimage">
+  </div>
+</section>
+<!-- Head content end -->
+
+{% include 'our_product_section.html' %}
+
+<!-- slick slide start -->
+<section class="slick_slide">
+  <div class="containerr">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">Qishloq xo'jalik texnikalari</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>1 milliard so'mgacha</font>
+              </p>
+            </div>
+            <button data-btn="" type="button" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img1.png" />
+        </div>
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">Bino va inshotlar</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz sug'urta orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>1 milliard so'mgacha</font>
+              </p>
+            </div>
+            <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img2.png" />
+        </div>
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">Taxi faoliyati uchun</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz va sug'urtalash orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>1 milliard so'mgacha</font>
+              </p>
+            </div>
+            <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img3.png" />
+        </div>
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">Uy joy uchun</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>400 million so'mgacha</font>
+              </p>
+            </div>
+            <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img4.png" />
+        </div>
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">Avtomobil olish uchun</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>200 million so'mgacha</font>
+              </p>
+            </div>
+            <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img5.png" />
+        </div>
+        <div class="swiper-slide">
+          <div class="ekspert">
+            <h4 class="headline__ekspert">YTT imoratlar uchun</h4>
+            <p class="p__ekspert">Garovsiz, kafilsiz va sug'urta orqali qarz</p>
+            <div class="char-block__ekspert">
+              <p class="char__eks">
+                <span>Taklif</span><br>
+                <font>0%(foizsiz)</font>
+              </p>
+              <p class="char__eks">
+                <span>Pul</span><br>
+                <font>1 milliard so'mgacha</font>
+              </p>
+            </div>
+            <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Qarz olish</button>
+          </div>
+          <img src="/static/images/xizmatlar-images/img6.png" />
+        </div>
+      </div>
+      <div class="swiper-button-next nextBtn"><i class="fa-solid fa-arrow-right"></i></div>
+      <div class="swiper-button-prev prevBtn"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- slick slide end -->
+
+{% if request_success %}
+<script>
+  alert('Ariza qabul qilindi!');
+  window.location.href = '/';
+</script>
+{% endif %}
+
+{% if key_error %}
+<script>
+  alert('Kalit noto`gri!');
+  window.location.href = '/';
+</script>
+{% endif %}
+<!-- Section padTop start -->
+<section class="padtop">
+  <div class="containerr">
+    <h4 class="padtop__head">Qarz berish shartlari</h4>
+    <div class="uslov">
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>01</p>
+        </div>
+        <p>Bir vaqtning oʼzida bir nechta turdagi faoliyat uchun qarz olish imkoniyati</p>
+      </div>
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>02</p>
+        </div>
+        <p>Oʼzbekiston Respublikasi fuqarolari va doimiy yashash uchun ruxsatnomaning mavjudligi</p>
+      </div>
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>03</p>
+        </div>
+        <p>Qarz miqdori 100 million soʼmdan 1 milliard soʼmgacha 3 yildan 10 yilgacha</p>
+      </div>
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>04</p>
+        </div>
+        <p>Yoshi 18 dan 65 yoshgacha</p>
+      </div>
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>05</p>
+        </div>
+        <p>Garovsiz qarz , kafillarsiz, faqat sugʼurta</p>
+      </div>
+      <div class="uslov_item">
+        <div class="sy">
+          <img src="/static/images/it.svg" alt="uslovItem">
+          <p>06</p>
+        </div>
+        <p>Moslashuvchan daromadni tasdiqlash tizimi</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section padTop end -->
+
+<!-- difficult situation section start -->
+<section class="difficult_sit">
+  <div class="containerr">
+    <h3 class="diff__head">Hatto qiyin vaziyatlarda ham qarzni tasdiqlang</h3>
+    <div class="mini-ban">
+      <div class="mini-ban_item1">
+        <img src="/static/images/sit-icon1.svg" alt="siticon">
+        <p class="diff__pf">Boshqa banklarda allaqachon rad etishlar bo'lganda</p>
+      </div>
+      <div class="mini-ban_item2">
+        <img src="/static/images/sit-icon2.svg" alt="siticon">
+        <p class="diff__pf">Yomon kredit tarixi</p>
+      </div>
+      <div class="mini-ban_item3">
+        <img src="/static/images/sit-icon3.svg" alt="siticon">
+        <p class="diff__pf">Kredit tarixi yo'q</p>
+      </div>
+      <div class="mini-ban_item4">
+        <img src="/static/images/sit-icon4.svg" alt="siticon">
+        <p class="diff__pf">Rasmiy ish yo'q</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- difficult situation section end -->
+
+<!-- work section start -->
+<section class="work_sec">
+  <div class="containerr">
+    <h4 class="work_head">Biz qanday ishlaymiz</h4>
+    <div class="work">
+      <div class="work_sec-item">
+        <img src="/static/images/how1.jpg" alt="howSecImg">
+        <div class="w__header">
+          <h5>Xabarnoma</h5>
+          <p>Biz banklarga xabar yuborish bilan shug`ullanmaymiz</p>
+        </div>
+      </div>
+      <div class="work_sec-item">
+        <img src="/static/images/how2.jpg" alt="howSecImg">
+        <div class="w__header">
+          <h5>100 % tasdiqlash</h5>
+          <p>Banklardan qarzdorlik mavjud bo`lgan xolatda ham barcha ichki talablarini o`rganib, biz barcha kerakli
+            tekshiruvlarni amalga oshiramiz, yangi biznes loyiha tuzamiz va qarz so'rovini to'g'ri shirkat menejerlariga
+            tasdiqlash uchun yuboramiz
+          </p>
+        </div>
+      </div>
+      <div class="work_sec-item">
+        <img src="/static/images/how3.jpg" alt="howSecImg">
+        <div class="w__header">
+          <h5>Xizmat</h5>
+          <p>Biz oldindan to`lov olmaymiz! faqat pochta xarajatlari uchun 10 ming so`m to`lov mavjud
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- work section end -->
+
+<!-- quest section start -->
+<section class="quest_section">
+  <div class="containerr">
+    <div class="quest">
+      <h3 class="quest__head">Universal xizmatlar byurosi qarz brokeridan eng qulay shartlarda qarz oling</h3>
+      <ul>
+        <li>Sug'urtani tejash</li>
+        <li>Yashirin bank to'lovlaridan xalos bo'ling</li>
+        <li>Bank filialiga qaraganda 2% pastroq stavka oling</li>
+        <li>Vaqtingizni tejang</li>
+      </ul>
+      <p class="quest__p">Qarz olish uchun bizga ariza yuboring</p>
+      <button type="button" data-btn="" class="questBtn btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Qarz olish</button>
+    </div>
+  </div>
+</section>
+<!-- quest section end -->
+
+<!-- Maps section start -->
+<section class="mapsSec">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.4100272862183!2d60.73971711450085!3d41.69008338513977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfd4afe83d4e39%3A0x488112b8d5343d7a!2sBeruniy%20Tumani%20Khokimligi!5e0!3m2!1sen!2s!4v1657067626622!5m2!1sen!2s"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!-- Maps section end -->
+{% endblock %}

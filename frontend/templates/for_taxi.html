@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Taxi faoliyati
+{% endblock %}
+
+{% block content %}
+<section class="buildingSec">
+  <div class="containerr">
+    <div class="buil__content">
+      <div class="buil__head">
+        <p class="build__title">Tadbirkorlik bilan shug'ullanish maqsadida yuridik shaxs tashkil qilgan xolda taksi faoliyati uchun 100 000 000 (yuz million) so'mdan 1 000 000 000 (1 milliard) so'mgacha <span style="color: #0069db">3 yildan - 10 yilgacha </span>qarz oling</p>
+        <div class="char-block__build">
+          <p class="char__build">
+            <span>Taklif</span><br>
+            <font>0%(foizsiz)</font>
+          </p>
+          <p class="char__build">
+            <span>Pul</span><br>
+            <font>1 milliard so'mgacha</font>
+          </p>
+        </div>
+        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Qarz olish</button>
+      </div>
+      <img class="buildimg" src="/static/images/xizmatlar-images/head-bus3.png">
+    </div>
+  </div>
+</section>
+
+{% include 'our_product_section.html' %}
+
+{% endblock %}

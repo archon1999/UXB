@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Qishloq xo'jalik texnikalari
+{% endblock %}
+
+{% block content %}
+<!-- Head content start -->
+<section class="buildingSec">
+  <div class="containerr">
+    <div class="buil__content">
+      <div class="buil__head">
+        <p class="build__title">Fermer xo'jaliklari qishloq xo'jalik texnikalarini xarid qilish uchun,Issiq xonalar, muzlatkich uskunalarini sotib olish uchun,qishloq xo'jaligi maxsulotlarini qayta ishlash uchun asbob-uskunalar xarid qilish, sut va sut maxsulotlarini qayta ishlash uchun 100 000 000 (yuz million) so'mdan 1 000 000 000 (1 milliard) so'mgacha <span style="color: #0069db">3 yildan - 10 yilgacha </span>qarz oling</p>
+        <div class="char-block__build">
+          <p class="char__build">
+            <span>Taklif</span><br>
+            <font>0%(foizsiz)</font>
+          </p>
+          <p class="char__build">
+            <span>Pul</span><br>
+            <font>1 milliard</font>
+          </p>
+        </div>
+        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Qarz olish</button>
+      </div>
+      <img class="buildimg" src="/static/images/xizmatlar-images/head-bus7.png">
+    </div>
+  </div>
+</section>
+<!-- Head content end -->
+
+{% include 'our_product_section.html' %}
+
+{% endblock %}

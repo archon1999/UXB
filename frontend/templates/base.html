@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="shortcut icon" href="/static/images/agreement.png">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://kit.fontawesome.com/874f255364.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  {% block custom_head %}
+  {% endblock %}
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header" id="header">
+    <div class="containerr">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/"><i class="fa-solid fa-handshake"></i></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children">
+              <a href="#ourprodsec" data-toggle="sub-menu">Xizmatlar<i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="{% url 'for_buildings' %}">Bino va inshotlar uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_instruments' %}">Asbob va uskunalar uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_structures' %}">YTT imoratlar uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_land' %}">YTT yer uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_housing' %}">YTT uy joy uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_taxi' %}">Taxi faoliyati uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_get_car' %}">YTT Avtomobil olish uchun</a></li>
+                <li class="menu-item"><a href="{% url 'for_agricultural_machinery' %}">Qishloq xo'jalik texnikalari uchun</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="{% url 'entities' %}">Yuridik shaxslar</a>
+            </li>
+            <li class="menu-item">
+              <a href="{% url 'individuals' %}">Jismoniy shaxslar</a>
+            </li>
+            <li class="menu-item">
+              <a href="{% url 'contact' %}">Aloqa</a>
+            </li>
+            <li class="menu-item">
+              <a type="button" href="{% url 'registration' %}">Ro'yhatdan o'tish</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- Zayafka Modal start-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Arizangizni qoldiring</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="app-nav">
+            <div class="app-text__content1">
+              <p>Jismoniy shaxslar</p>
+            </div>
+            <div class="app-text__content2">
+              <p>Yuridik shaxslar</p>
+            </div>
+          </div>
+          <div class="application__content1">
+            <!-- Jismoniy shaxslar uchun form -->
+            <form id="physical_form" action="/request/individual" method="POST">
+              {% csrf_token %}
+              <label id="name_label" for="fio">FIO:</label><br>
+              <input name="full_name" id="name_input" type="text" required placeholder="name..."><br>
+              <label id="date_label" for="birthday">Tug'ilgan kun</label><br>
+              <input name="birth_day" id="date_input" type="date" required><br>
+              <label id="region_label" for="region">Viloyat</label><br>
+              <select name="region" id="region_select">
+                <option value="Xorazm">Xorazm</option>
+                <option value="Buxoro">Buxoro</option>
+                <option value="Farg'ona">Farg'ona</option>
+                <option value="Jizzax">Jizzax</option>
+                <option value="Andijon">Andijon</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Navoiy">Navoiy</option>
+                <option value="Qashqadaryo">Qashqadaryo</option>
+                <option value="Qoraqalpog'iston Respublikasi">Qoraqalpog'iston Respublikasi</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Sirdarydo">Sirdarydo</option>
+                <option value="Surxondaryo">Surxondaryo</option>
+                <option value="Toshkent">Toshkent</option>
+              </select><br>
+              <label id="city_label" for="city">Shahar yoki tuman</label><br>
+              <input name="city" id="city_input" type="text" required placeholder="city"><br>
+              <label id="street_label" for="street_label">Ko'cha</label><br>
+              <input name="street" id="street_input" type="text" required placeholder="street"><br>
+              <label id="number_label" for="street_number">Uy raqami</label><br>
+              <input name="street_number" id="number_input" type="number" required placeholder="street number"><br>
+              <label id="key_label" for="key_number">Kalit raqami</label><br>
+              <input name="key" id="key_input" type="text" placeholder="Kalit raqamini kiriting">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
+                <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+              </div>
+
+            </form>
+          </div>
+          <div class="application__content2">
+            <!-- Yuridik shaxslar uchun -->
+            <form id="physical_form" action="/request/entity" method="POST">
+              {% csrf_token %}
+              <label id="name_label" for="fio">Tashkilot nomi</label><br>
+              <input name="company_name" id="name_input" type="text" required placeholder="company name"><br>
+              <label id="name_label" for="fio">Yuridik manzil</label><br>
+              <input name="address" id="name_input" type="text" required placeholder="address"><br>
+              <label id="name_label" for="fio">MFO:</label><br>
+              <input name="MFO" id="name_input" type="text" required placeholder="MFO"><br>
+              <label id="name_label" for="fio">INN</label><br>
+              <input name="INN" id="name_input" type="text" required placeholder="INN number"><br>
+              <label id="street_label" for="street_label">Tel:</label><br>
+              <input name="phone_number" id="street_input" type="number" required placeholder="telefon number"><br>
+              <label id="number_label" for="street_number">Hisob raqami</label><br>
+              <input name="account_number" id="number_input" type="number" required placeholder="account number"><br>
+              <label id="key_label" for="key_number">Kalit raqami</label><br>
+              <input name="key" id="key_input" type="text" placeholder="Kalit raqamini kiriting">
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
+                <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Zayafka Modal start-->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="containerr">
+      <div class="footer-nav">
+        <div class="footer-nav__block1">
+          <a href="#ourprodsec" class="main-link">Xizmatlar</a>
+          <ul>
+            <li><a href="{% url 'for_buildings' %}">Bino va inshotlar uchun</a></li>
+            <li><a href="{% url 'for_instruments' %}">Asbob va uskunalar uchun</a></li>
+            <li><a href="{% url 'for_structures' %}">YTT imoratlar uchun</a></li>
+            <li><a href="{% url 'for_land' %}">YTT yer uchun</a></li>
+            <li><a href="{% url 'for_housing' %}">YTT uy joy uchun</a></li>
+            <li><a href="{% url 'for_taxi' %}">Taxi faoliyati uchun</a></li>
+            <li><a href="{% url 'for_get_car' %}">YTT Avtomobil olish uchun</a></li>
+            <li><a href="{% url 'for_agricultural_machinery' %}">Qishloq xo'jalik texnikalari uchun</a>
+      </ul>
+        </div>
+        <div class="footer-nav__block2">
+          <a href="{% url 'individuals' %}" class="main-link">Yuridik shaxslar</a>
+          <a href="{% url 'entities' %}" class="main-link">Jismoniy shaxslar</a>
+          <a href="{% url 'contact' %}" class="main-link">Aloqa</a>
+        </div>
+        <div class="footer-call">
+          <h4>Universal Xizmatlar Byurosi</h4>
+          <div class="logo-footer">
+            <a href="/"><i class="fa-solid fa-handshake"></i> UXB</a>
+          </div>
+          <p>Biz har qanday savollarga javob beramiz</p>
+          <a href="tel: +998991234567" type="phone"><i class="fa-solid fa-phone"> +998991234567</i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+
+  <!-- bootsrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- swipper js start-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- swipper js end -->
+  <script src="/static/js/script.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

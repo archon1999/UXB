@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Avtomobil olish uchun
+{% endblock %}
+
+{% block content %}
+<!-- Head content start -->
+<section class="buildingSec">
+  <div class="containerr">
+    <div class="buil__content">
+      <div class="buil__head">
+        <p class="build__title">Yakka tartibdagi tadbirkorlik faoliyatini amalga oshirish maqsadida avtomobil xarid qilish uchun 100 000 000 (yuz million) so'mdan 200 000 000 (ikki yuz million) so'mgacha <span style="color: #0069db">3 yilga</span>qarz oling</p>
+        <div class="char-block__build">
+          <p class="char__build">
+            <span>Taklif</span><br>
+            <font>0%(foizsiz)</font>
+          </p>
+          <p class="char__build">
+            <span>Pul</span><br>
+            <font>200 million so'mgacha</font>
+          </p>
+        </div>
+        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Qarz olish</button>
+      </div>
+      <img class="buildimg" src="/static/images/xizmatlar-images/head-bus6.png">
+    </div>
+  </div>
+</section>
+<!-- Head content end -->
+
+{% include 'our_product_section.html' %}
+
+{% endblock %}

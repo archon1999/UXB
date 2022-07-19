@@ -1,0 +1,35 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.HomeView.as_view(), name='home'),
+    path('registration/', views.RegistrationView.as_view(),
+         name='registration'),
+    path('request/individual', views.RequestIndividual.as_view(),
+         name='request_individual'),
+    path('request/entity', views.RequestEntity.as_view(),
+         name='request_entity'),
+    path('contact/', views.ContactView.as_view(), name='contact'),
+    path('individuals/', views.IndividualsView.as_view(),
+         name='individuals'),
+    path('entities/', views.EntitiesView.as_view(),
+         name='entities'),
+    path('for_buildings/', views.ForBuildingsView.as_view(),
+         name='for_buildings'),
+    path('for_instruments/', views.ForInstrumentsView.as_view(),
+         name='for_instruments'),
+    path('for_structures/', views.ForStructuresView.as_view(),
+         name='for_structures'),
+    path('for_agricultural_machinery/',
+         views.ForAgriculturalMachineryView.as_view(),
+         name='for_agricultural_machinery'),
+    path('for_get_car/', views.ForGetCarView.as_view(),
+         name='for_get_car'),
+    path('for_housing/', views.ForHousingView.as_view(),
+         name='for_housing'),
+    path('for_land/', views.ForLandView.as_view(),
+         name='for_land'),
+    path('for_taxi/', views.ForTaxiView.as_view(),
+         name='for_taxi'),
+]
