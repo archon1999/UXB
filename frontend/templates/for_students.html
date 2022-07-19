@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Talabalarga kontrakt pullarini to'lshlari uchun
+{% endblock %}
+
+{% block content %}
+<!-- Head content start -->
+<section class="buildingSec">
+    <div class="containerr">
+        <div class="buil__content">
+            <div class="buil__head">
+                <p class="build__title">
+                    Oliy ta'lim muassasalari,texnikumlar,kasb-hunar maktablari talabalarining shartnoma (kontrakt)
+                    to'lovlarini amalga oshirish uchun qulay shartlarda
+                    <span style="color: #0069db">10 yilgacha </span>qarz oling
+                </p>
+                <div class="char-block__build">
+                    <p class="char__build">
+                        <span>Taklif</span><br />
+                        <font>0%(foizsiz)</font>
+                    </p>
+                    <p class="char__build">
+                        <span>Pul</span><br />
+                        <font>10 million so'mgacha</font>
+                    </p>
+                </div>
+                <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Qarz olish
+                </button>
+            </div>
+            <img class="buildimg" src="/static/images/xizmatlar-images/head-bus4.png" />
+        </div>
+    </div>
+</section>
+<!-- Head content end -->
+{% include 'our_product_section.html' %}
+
+{% endblock %}

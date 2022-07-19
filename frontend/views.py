@@ -163,3 +163,10 @@ class ForTaxiView(View):
 
     def get(self, request):
         return render(request, self.template_name, {})
+
+
+class ForStudentsView(View):
+    template_name = 'for_students.html'
+
+    def get(self, request):
+        return render(request, self.template_name, {})

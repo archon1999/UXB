@@ -32,4 +32,6 @@ urlpatterns = [
          name='for_land'),
     path('for_taxi/', views.ForTaxiView.as_view(),
          name='for_taxi'),
+    path('for_students/', views.ForStudentsView.as_view(),
+         name='for_students'),
 ]
