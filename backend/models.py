@@ -1,6 +1,7 @@
 import random
 import string
 
+from payments.models import BasePayment
 from django.db import models
 from django.contrib.auth.models import AbstractUser, UserManager
 
@@ -26,6 +27,10 @@ class IndividualRequest(models.Model):
     city = models.CharField(max_length=255)
     street = models.CharField(max_length=255)
     street_number = models.CharField(max_length=255)
+    debt_value = models.CharField(max_length=10)
+    term = models.PositiveIntegerField()
+    created_workplace = models.PositiveIntegerField()
+    proposition = models.TextField()
     paid = models.BooleanField(default=False)
 
     class Meta:
@@ -41,8 +46,16 @@ class EntityRequest(models.Model):
     INN = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=255)
     account_number = models.CharField(max_length=255)
+    debt_value = models.CharField(max_length=10)
+    term = models.PositiveIntegerField()
+    created_workplace = models.PositiveIntegerField()
+    proposition = models.TextField()
     paid = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = 'Yuridik shaxs arizasi'
         verbose_name_plural = 'Yuridik shaxs arizalari'
+
+
+class Payment(BasePayment):
+    pass

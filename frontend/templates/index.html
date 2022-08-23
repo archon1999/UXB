@@ -5,6 +5,17 @@ Universal Xizmatlar Byurosi
 {% endblock %}
 
 {% block content %}
+<form id="click_form" action="https://my.click.uz/services/pay" method="get" target="_blank">
+  <input type="hidden" name="amount" value="1000" />
+  <input type="hidden" name="merchant_id" value="17332"/>
+  <input type="hidden" name="merchant_user_id" value="27867"/>
+  <input type="hidden" name="service_id" value="24855"/>
+  <input type="hidden" name="transaction_param" value="user123"/>
+  <input type="hidden" name="return_url" value="http://193.164.17.14:8001"/>
+  <button type="submit" class="click_logo"><i></i>Оплатить через CLICK</button>
+</form>
+
+
 <!-- Text animation start -->
 <section class="text__animation">
   <div class="containerr">
@@ -35,7 +46,7 @@ Universal Xizmatlar Byurosi
         <font>Qarz olish</font>
       </button>
     </div>
-    <img class="head-img" src="/static/images/uxb.png" alt="headimage">
+    <img class="head-img" src="/static/images/logo-beruniy2.png" alt="headimage">
   </div>
 </section>
 <!-- Head content end -->

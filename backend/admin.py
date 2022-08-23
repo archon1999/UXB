@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import User, EntityRequest, IndividualRequest
+from .models import User, EntityRequest, IndividualRequest, Payment
 
 
 @admin.register(User)
@@ -18,3 +18,8 @@ class IndividualRequestAdmin(admin.ModelAdmin):
 @admin.register(EntityRequest)
 class EntityRequestAdmin(admin.ModelAdmin):
     list_display = ['id', 'company_name', 'address', 'phone_number']
+
+
+@admin.register(Payment)
+class PaymentAdmin(admin.ModelAdmin):
+    pass

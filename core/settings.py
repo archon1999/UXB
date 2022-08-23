@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'frontend',
     'backend',
+    'payments',
+    'click',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,16 @@ EMAIL_HOST_USER = 'nazarbek.baltabaev@gmail.com'
 EMAIL_HOST_PASSWORD = 'avvxluawanfvxfep'
 
 AUTH_USER_MODEL = 'backend.User'
+
+
+PAYMENT_HOST = '193.164.17.14:8001'
+PAYMENT_USES_SSL = False
+PAYMENT_MODEL = 'backend.Payment'
+PAYMENT_VARIANTS = {
+    'click': ('click.ClickProvider', {
+        'merchant_id': 17332,
+        'merchant_service_id': 24855,
+        'merchant_user_id': 27867,
+        'secret_key': 'WOpTHtih2TOng8'
+    })
+}

@@ -65,6 +65,10 @@ class RequestIndividual(View):
             city=request.POST['city'],
             street=request.POST['street'],
             street_number=request.POST['street_number'],
+            debt_value=request.POST['debt_value'],
+            term=request.POST['term'],
+            created_workplace=request.POST['created_workplace'],
+            proposition=request.POST['proposition'],
         )
         return HomeView().get(request, request_success=True)
 
@@ -84,6 +88,10 @@ class RequestEntity(View):
             INN=request.POST['INN'],
             phone_number=request.POST['phone_number'],
             account_number=request.POST['account_number'],
+            debt_value=request.POST['debt_value'],
+            term=request.POST['term'],
+            created_workplace=request.POST['created_workplace'],
+            proposition=request.POST['proposition'],
         )
         return HomeView().get(request, request_success=True)
 

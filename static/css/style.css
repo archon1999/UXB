@@ -129,6 +129,7 @@ header.stiky {
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
+  z-index: 999;
 }
 @media (min-width: 992px) {
   .header .menu > .menu-item-has-children:hover > .sub-menu {
@@ -328,12 +329,14 @@ header.stiky {
   background: #f8f8f9;
 }
 .head-img {
-  right: 0;
+  position: relative;
+  right: 3rem;
   bottom: 0;
-  max-height: 100%;
-  max-width: 60%;
+  max-height: 80%;
+  max-width: 70%;
   vertical-align: middle;
   border: 0;
+  border-radius: 50%;
 }
 .head-content_text {
   max-width: 45%;
@@ -1117,6 +1120,15 @@ footer {
   flex-direction: column;
   padding: 0 0 20px;
 }
+
+.footer-nav_block3 a i{
+  font-size: 30px;
+  color: #dcdde2;
+  padding-right: 20px;
+}
+.footer-nav_block3 h6{
+  color:#00b1df;
+}
 .footer-call h4 {
   color: #00b1df;
   font-size: 20px;
@@ -1300,6 +1312,8 @@ footer {
   font-size: 16px;
 }
 
+/* Ariza qoldirish */
+
 .app-nav{
   display: flex;
   justify-content: center;
@@ -1356,7 +1370,8 @@ footer {
 }
 #name_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
 #date_label{
   font-size: 18px;
@@ -1365,7 +1380,8 @@ footer {
 }
 #date_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
 #region_label{
   font-size: 18px;
@@ -1374,7 +1390,8 @@ footer {
 }
 #region_select{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
 #city_label{
   font-size: 18px;
@@ -1383,7 +1400,8 @@ footer {
 }
 #city_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
 #street_label{
   font-size: 18px;
@@ -1392,23 +1410,63 @@ footer {
 }
 #street_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
-#number_label{
+#number_label,#key_label,#qarz_label,
+#srok_label,#ish_label,#murojat_label{
   font-size: 18px;
   font-family: sans-serif, "Roboto";
   margin-top: 1%;
 }
 #number_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
 }
 #key_label{
   font-size: 18px;
   font-family: sans-serif, "Roboto";
   margin-top: 1%;
 }
-#key_input{
+#key_input,#qarz_input,#srok_input,
+#ish_input,#murojat_input{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
+}
+
+
+.click_logo {
+  padding:4px 10px;
+  cursor:pointer;
+  color: #fff;
+  line-height:190%;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #037bc8;
+  text-shadow: 0px -1px 0px #037bc8;
+  border-radius: 4px;
+  background: #27a8e0;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI3YThlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzhlZDciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#27a8e0), to(#1c8ed7));
+  background: -webkit-linear-gradient(#27a8e0 0%, #1c8ed7 100%);
+  background: -moz-linear-gradient(#27a8e0 0%, #1c8ed7 100%);
+  background: -o-linear-gradient(#27a8e0 0%, #1c8ed7 100%);
+  background: linear-gradient(#27a8e0 0%, #1c8ed7 100%);
+  box-shadow:  inset    0px 1px 0px   #45c4fc;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27a8e0', endColorstr='#1c8ed7',GradientType=0 );
+  -webkit-box-shadow: inset 0px 1px 0px #45c4fc;
+  -moz-box-shadow: inset  0px 1px 0px  #45c4fc;
+  -webkit-border-radius:4px;
+  -moz-border-radius: 4px;
+  }
+.click_logo i {
+  background: url(https://m.click.uz/static/img/logo.png) no-repeat top left;
+  width:30px;
+  height: 25px;
+  display: block;
+  float: left;
 }
