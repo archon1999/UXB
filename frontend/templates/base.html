@@ -96,10 +96,10 @@
             <!-- Jismoniy shaxslar uchun form -->
             <form id="physical_form" action="/request/individual" method="POST">
               {% csrf_token %}
-              <label id="name_label" for="fio">FIO:</label><br>
-              <input name="full_name" id="name_input" type="text" required placeholder="name..."><br>
-              <label id="date_label" for="birthday">Tug'ilgan kun</label><br>
-              <input name="birth_day" id="date_input" type="date" required><br>
+              <label id="name_label" for="fio">FIO:*</label><br>
+              <input name="full_name" id="name_input" type="text" required maxlength="255" placeholder="FIO"><br>
+              <label id="date_label" for="birthday">Tug'ilgan kun *</label><br>
+              <input name="birth_day" id="date_input" type="date" required maxlength="255"><br>
               <label id="region_label" for="region">Viloyat</label><br>
               <select name="region" id="region_select">
                 <option value="Xorazm">Xorazm</option>
