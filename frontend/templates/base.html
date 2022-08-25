@@ -96,11 +96,11 @@
             <!-- Jismoniy shaxslar uchun form -->
             <form id="physical_form" action="/request/individual" method="POST">
               {% csrf_token %}
-              <label id="name_label" for="fio">FIO:</label><br>
-              <input name="full_name" id="name_input" type="text" required placeholder="name..."><br>
-              <label id="date_label" for="birthday">Tug'ilgan kun</label><br>
+              <label id="name_label" for="fio">FIO:*</label><br>
+              <input name="full_name" id="name_input" type="text" required placeholder="FIO"><br>
+              <label id="date_label" for="birthday">Tug'ilgan kun *</label><br>
               <input name="birth_day" id="date_input" type="date" required><br>
-              <label id="region_label" for="region">Viloyat</label><br>
+              <label id="region_label" for="region">Viloyat *</label><br>
               <select name="region" id="region_select">
                 <option value="Xorazm">Xorazm</option>
                 <option value="Buxoro">Buxoro</option>
@@ -116,23 +116,23 @@
                 <option value="Surxondaryo">Surxondaryo</option>
                 <option value="Toshkent">Toshkent</option>
               </select><br>
-              <label id="city_label" for="city">Shahar yoki tuman</label><br>
-              <input name="city" id="city_input" type="text" required placeholder="city"><br>
-              <label id="street_label" for="street_label">Ko'cha</label><br>
-              <input name="street" id="street_input" type="text" required placeholder="street"><br>
+              <label id="city_label" for="city">Shahar yoki tuman *</label><br>
+              <input name="city" id="city_input" type="text" required maxlength="255" placeholder="city"><br>
+              <label id="street_label" for="street_label">Ko'cha *</label><br>
+              <input name="street" id="street_input" type="text" required maxlength="255" placeholder="street"><br>
               <label id="number_label" for="street_number">Uy raqami</label><br>
-              <input name="street_number" id="number_input" type="number" required placeholder="street number"><br>
+              <input name="street_number" id="number_input" type="text" required maxlength="255" placeholder="uy raqamini kiriting"><br>
 
-              <label id="qarz_label" for="qarz_input" >Qarz miqdori</label><br>
-              <input id="qarz_input" name="debt_value" type="text" placeholder="qarz miqdorini kiriting" required maxlength="6"><br>
+              <label id="qarz_label" for="qarz_input" >Qarz miqdori*</label><br>
+              <input id="qarz_input" name="debt_value" type="text" placeholder="1 000 000 000" required maxlength="20"><br>
               <label id="srok_label" for="srok_input">Muddati</label><br>
-              <input id="srok_input" name="term" type="number" placeholder="qarzni qaytarish muddatini kiriting" required><br>
+              <input id="srok_input" name="term" type="number" placeholder="qarzni qaytarish muddatini kiriting *" required maxlength="255"><br>
               <label id="ish_label" for="ish_input">Yaratiladigan ish o'rni</label><br>
-              <input id="ish_input" name="created_workplace" type="number" placeholder="Tadbirkorlik faoliyati uchun"><br>
-              <label id="murojat_label" for="murojat_input">Murojat matni</label><br>
-              <textarea name="proposition" id="murojat_input" cols="50" rows="8" placeholder="Qarz olishdan maqsadingiz"></textarea required><br>
+              <input id="ish_input" name="created_workplace" type="number" maxlength="255" placeholder="Tadbirkorlik faoliyati uchun"><br>
+              <label id="murojat_label" for="murojat_input">Murojat matni *</label><br>
+              <textarea name="proposition" id="murojat_input" cols="50" rows="8" placeholder="Qarz olishdan maqsadingiz"></textarea required maxlength="255"><br>
 
-              <label id="key_label" for="key_number">Kalit raqami</label><br>
+              <label id="key_label" for="key_number">Kalit raqami *</label><br>
               <input name="key" id="key_input" type="text" placeholder="Kalit raqamini kiriting">
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
@@ -145,24 +145,24 @@
             <!-- Yuridik shaxslar uchun -->
             <form id="physical_form" action="/request/entity" method="POST">
               {% csrf_token %}
-              <label id="name_label" for="fio">Tashkilot nomi</label><br>
-              <input name="company_name" id="name_input" type="text" required placeholder="company name"><br>
-              <label id="name_label" for="fio">Yuridik manzil</label><br>
-              <input name="address" id="name_input" type="text" required placeholder="address"><br>
-              <label id="name_label" for="fio">MFO:</label><br>
-              <input name="MFO" id="name_input" type="text" required placeholder="MFO"><br>
-              <label id="name_label" for="fio">INN</label><br>
-              <input name="INN" id="name_input" type="text" required placeholder="INN number"><br>
-              <label id="street_label" for="street_label">Tel:</label><br>
-              <input name="phone_number" id="street_input" type="number" required placeholder="telefon number"><br>
-              <label id="number_label" for="street_number">Hisob raqami</label><br>
-              <input name="account_number" id="number_input" type="number" required placeholder="account number"><br>
+              <label id="name_label" for="fio">Tashkilot nomi *</label><br>
+              <input name="company_name" id="name_input" type="text" required maxlength="255" placeholder="company name"><br>
+              <label id="name_label" for="fio">Yuridik manzil *</label><br>
+              <input name="address" id="name_input" type="text" required maxlength="255" placeholder="address"><br>
+              <label id="name_label" for="fio">MFO:*</label><br>
+              <input name="MFO" id="name_input" type="text" required maxlength="255" placeholder="MFO"><br>
+              <label id="name_label" for="fio">INN *</label><br>
+              <input name="INN" id="name_input" type="text" required maxlength="255" placeholder="INN number"><br>
+              <label id="street_label" for="street_label">Tel:*</label><br>
+              <input name="phone_number" id="street_input" type="number" required maxlength="255" placeholder="telefon number"><br>
+              <label id="number_label" for="street_number">Hisob raqami *</label><br>
+              <input name="account_number" id="number_input" type="number" required maxlength="255" placeholder="account number"><br>
 
-              <label id="qarz_label" for="qarz_input" >Qarz miqdori</label><br>
-              <input id="qarz_input" name="debt_value" type="text" placeholder="qarz miqdorini kiriting" required maxlength="6"><br>
-              <label id="srok_label" for="srok_input">Muddati</label><br>
+              <label id="qarz_label" for="qarz_input" >Qarz miqdori *</label><br>
+              <input id="qarz_input" name="debt_value" type="text" placeholder="1 000 000 000" required maxlength="20"><br>
+              <label id="srok_label" for="srok_input">Muddati *</label><br>
               <input id="srok_input" name="term" type="number" placeholder="qarzni qaytarish muddatini kiriting" required><br>
-              <label id="ish_label" for="ish_input">Yaratiladigan ish o'rni</label><br>
+              <label id="ish_label" for="ish_input">Yaratiladigan ish o'rni *</label><br>
               <input id="ish_input" name="created_workplace" type="number" placeholder="Tadbirkorlik faoliyati uchun"><br>
               <label id="murojat_label" for="murojat_input">Murojat matni</label><br>
               <textarea name="proposition" id="murojat_input" cols="50" rows="8" placeholder="Qarz olishdan maqsadingiz"></textarea required><br>
