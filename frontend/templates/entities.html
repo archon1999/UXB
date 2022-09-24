@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Yuridik shaxslar
@@ -7,21 +8,21 @@ Yuridik shaxslar
 {% block content %}
     <!-- Head content start -->
     <section class="head-content">
-      <div class="head-container containerr">
+      <div style="padding-top: 100px" class="head-container containerr">
         <div class="head-content_text">
-          <h1>YURIDIK SHAXSLAR UCHUN QULAY SHARTLARDA ONLINE <span class="kredit_oling">QARZ OLING</span></h1>
+          <h1>{% trans 'online'%} <span class="kredit_oling"></span></h1>
           <div class="char-block">
             <p class="char">
-              <span>Taklif</span> <br>
-              <font>0%(foizsiz)</font>
+              <span>{% trans 'offer'%}</span> <br>
+              <font>0%{% trans 'foizsiz'%}</font>
             </p>
             <p class="char">
-              <span>Pul</span> <br>
-              <font>2 milliard so'mgacha</font>
+              <span>{% trans 'money'%}</span> <br>
+              <font>{% trans 'upTo2mlrd'%}</font>
             </p>
           </div>
           <button type="button" class="but btn btn-primary" data-btn="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <font>Qarz olish</font>
+            <font>{% trans 'apply'%}</font>
           </button>
         </div>
         <img class="head-img" src="/static/images/xizmatlar-images/head-bus4.png" alt="headimage">

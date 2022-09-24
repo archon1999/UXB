@@ -108,7 +108,6 @@ def click_webhook_errors(request):
 
 def prepare(request):
     order_id = request.POST.get('merchant_trans_id', None)
-    print(order_id)
     result = click_webhook_errors(request)
     order = order_load(order_id)
     if result['error'] == '0':
@@ -124,9 +123,7 @@ def prepare(request):
 
 def complete(request):
     order_id = request.POST.get('merchant_trans_id', None)
-    print(order_id)
     order = order_load(order_id)
-    print(order)
     result = click_webhook_errors(request)
     if request.POST.get('error', None) != None and int(request.POST.get('error', None)) < 0:
         order.status = PaymentStatus.REJECTED

@@ -1,3 +1,4 @@
+{% load i18n %}
 
 <!DOCTYPE html>
 <!-- === Coding by CodingLab | www.codinglabweb.com === -->
@@ -13,13 +14,13 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="/static/css/login.css">
-         
-    <title>Ro'yhatdan o'tish</title>
+
+    <title>{% trans "royhatdanotish" %}</title>
 </head>
 <body>
     {% if registration_success %}
     <script>
-        alert('Ro`yhatdan o`tdingiz! Kalit elektron manzilga yuborildi');
+        alert('{% trans "success" %}');
         window.location.href = '/';
     </script>
     {% endif %}
@@ -27,7 +28,7 @@
     <div class="container">
         <div class="forms">
             <div class="form login">
-                <span class="title">Kirish</span>
+                <span class="title">{% trans "kirish" %}</span>
 
                 <form action="#">
                     <div class="input-field">
@@ -54,26 +55,28 @@
 
             <!-- Registration Form -->
             <div class="form signup">
-                <span class="title">Ro‘yxatdan o‘tish</span>
-
+                <span class="title">{% trans 'royhatdanotish' %}</span>
+                <br>
+                <span style="color: red;">{% trans 'registr' %} {{ payment_value }} {% trans 'som' %}
+                </span>
                 <form method="POST">
                     {% csrf_token %}
                     <div class="input-field">
-                        <input type="text" name="full_name" placeholder="To'liq ismingiz" required>
+                        <input type="text" name="full_name" placeholder="{% trans 'fullName' %}" required autocomplete="off" minlength="3" maxlength="255">
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="email" name="email" placeholder="Elektron pochtangizni kiriting" required>
-                        <i class="uil uil-envelope icon"></i>
+                        <input name="phone_number" type="phone" placeholder="{% trans 'telnumber' %}" autocomplete="off" maxlength="255" minlength="9" required>
+                        <i class="uil uil-phone icon"></i>
                     </div>
-                    {% if form.email.errors %}
+                    {% if form.phone_number.errors %}
                     <span style="color: red;">
-                        {{ form.email.errors.0 }}
+                        {% trans 'mavjud' %}
                     </span>
                     {% endif %}
- 
+
                     <div class="input-field">
-                        <input type="password" name="password" class="password" placeholder="Parol yarating" required>
+                        <input type="password" name="password" class="password" placeholder="{% trans 'createpassword' %}" required autocomplete="off" maxlength="255" minlength="6">
                         <i class="uil uil-lock icon"></i>
                     </div>
                     {% if form.password.errors %}
@@ -81,22 +84,27 @@
                         {{ form.password.errors.0 }}
                     </span>
                     {% endif %}
- 
+
                     <div class="input-field">
-                        <input type="password" name="confirm_password" class="password" placeholder="Parolni tasdiqlang" required>
+                        <input type="password" name="confirm_password" class="password" placeholder="{% trans 'accept' %}" required autocomplete="off" maxlength="255">
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
-                            <label for="termCon" class="text">Men barcha shart va shartlarni qabul qildim</label>
+                            <input name="confirmation" type="checkbox" id="termCon">
+                            <label for="termCon" class="text"> {% trans 'shartlar' %} <a href="/static/oferta/foydalanish shartlari.pdf"> {% trans 'qabul' %} {% trans 'qildim' %}</label>
+                            {% if form.confirmation.errors %}
+                            <span style="color: red;">
+                                {% trans 'tasdiqlash' %}
+                            </span>
+                            {% endif %}
                         </div>
                     </div>
 
                     <div class="input-field button">
-                        <input type="submit" value="Ro'yxatdan o'tish">
+                        <input type="submit" value="{% trans 'royhatdanotish' %}">
                     </div>
                 </form>
                 <!--

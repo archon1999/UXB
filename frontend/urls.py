@@ -10,6 +10,8 @@ urlpatterns = [
          name='request_individual'),
     path('request/entity', views.RequestEntity.as_view(),
          name='request_entity'),
+    path('request_payment/<int:payment_id>', views.RequestPaymentView.as_view(),
+         name='request_payment'),
     path('contact/', views.ContactView.as_view(), name='contact'),
     path('individuals/', views.IndividualsView.as_view(),
          name='individuals'),
@@ -34,4 +36,6 @@ urlpatterns = [
          name='for_taxi'),
     path('for_students/', views.ForStudentsView.as_view(),
          name='for_students'),
+    path('set_language/<str:language>/', views.SetLanguageView.as_view(),
+         name='set_language'),
 ]

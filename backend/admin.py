@@ -5,21 +5,21 @@ from .models import User, EntityRequest, IndividualRequest, Payment
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['id', 'get_full_name', 'email']
+    list_display = ['id', 'get_full_name', 'phone_number', 'date_joined']
 
 
 @admin.register(IndividualRequest)
 class IndividualRequestAdmin(admin.ModelAdmin):
-    list_display = ['id', 'full_name', 'birth_day',
-                    'region', 'city']
+    list_display = ['id', 'full_name', 'phone_number',
+                    'region', 'city', 'paid']
     list_filter = ['region', 'city']
 
 
 @admin.register(EntityRequest)
 class EntityRequestAdmin(admin.ModelAdmin):
-    list_display = ['id', 'company_name', 'address', 'phone_number']
+    list_display = ['id', 'company_name', 'address', 'phone_number', 'paid']
 
 
 @admin.register(Payment)
 class PaymentAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['id', 'transaction_id']

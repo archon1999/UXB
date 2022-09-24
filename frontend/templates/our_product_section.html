@@ -1,50 +1,63 @@
+{% load i18n %}
+
 <!-- Our prod section start -->
 <section class="our-prod-section" id="ourprodsec">
   <div class="containerr">
-    <h2 class="headline">MAQSADLARINGIZNI AMALGA OSHIRISH UCHUN QULAY SHAROITDAN FOYDALANING!</h2>
-    <p class="sub__hidline">0 % midorida Kooperatsiyani  rivojlantirish maqsadida Oʻzbekiston Respublikasi fuqarolariga  3-yildan 10-yilgacha boʻlgan muddatga yangi ish oʻrinlarini yaratish, uy-joy sharoitini yaxshilash va tadbirkorlik faoliyatini amalga oshirish maqsadida 100 million soʻmdan 1 milliard soʻmgacha boʻlgan miqdorda pul mablagʻlari xar qanday biznes uchun kafilsiz va foyizsiz Sugʻurtalangan shartlarda beriladi</p>
+    <h2 class="headline">{% trans 'takeOpportunity' %}</h2>
+    <p class="sub__hidline">{% trans 'text3' %}</p>
     <div class="our-prod">
       <div class="our-prod_it">
-        <a href="{% url 'for_housing' %}">
+        <a href="{% url 'for_land' %}">
           <img src="/static/images/xizmatlar-images/prod1.jpg" alt="ourprod1">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">BIZNES</p>
-          <p class="prod-name">YTT yer uchun</p>
-          <a href="{% url 'for_housing' %}"><span class="mores">Ko'proq</span><i
-              class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="our-prod_it">
-        <a href="{% url 'for_buildings' %}">
-          <img src="/static/images/xizmatlar-images/prod2.jpg" alt="ourprod2">
-        </a>
-        <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Bino va inshotlar</p>
-          <a href="{% url 'for_buildings' %}"><span class="mores">Ko'proq</span><i
+          <p class="tags">{% trans 'biznes' %}</p>
+          <p class="prod-name">{% trans 'forHousing' %}</p>
+          <a href="{% url 'for_land' %}"><span class="mores">{% trans 'koproq' %}</span><i
               class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="our-prod_it">
         <a href="{% url 'for_structures' %}">
+          <img src="/static/images/xizmatlar-images/prod2.jpg" alt="ourprod2">
+        </a>
+        <div class="prod_it-desc">
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forHousing1' %}</p><br/>
+          <a href="{% url 'for_structures' %}"><span class="mores">{% trans 'koproq' %}</span><i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="our-prod_it">
+        <a href="{% url 'for_buildings' %}">
+          <img src="/static/images/xizmatlar-images/zalog1.jpg" alt="ourprod2">
+        </a>
+        <div class="prod_it-desc">
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forHousing2' %}</p><br/>
+          <a href="{% url 'for_buildings' %}"><span class="mores">{% trans 'koproq' %}</span><i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- <div class="our-prod_it">
+        <a href="{% url 'for_structures' %}">
           <img src="/static/images/xizmatlar-images/prod3.jpg" alt="ourprod3">
         </a>
         <div class="prod_it-desc">
           <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">YTT imoratlar uchun</p>
+          <p class="prod-name">Yakka tartibdagi imorat qurilishi uchun</p>
           <a href="{% url 'for_structures' %}"><span class="mores">Ko'proq</span><i
               class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </div>
+      </div> -->
       <div class="our-prod_it">
         <a href="{% url 'for_instruments' %}">
           <img src="/static/images/xizmatlar-images/prod4.jpg" alt="ourprod4">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Asbob va uskunalar</p>
-          <a href="{% url 'for_instruments' %}"><span class="mores">Ko'proq</span><i
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'housing3' %}</p>
+          <a href="{% url 'for_instruments' %}"><span class="mores">{% trans 'koproq' %}</span><i
               class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
@@ -53,20 +66,18 @@
           <img src="/static/images/xizmatlar-images/prod5.jpg" alt="ourprod5">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Taxi faoliyati uchun</p>
-          <a href="{% url 'for_taxi' %}"><span class="mores">Ko'proq</span><i class="fa-solid fa-arrow-right"></i></a>
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forTaxiActivity' %}</p>
+          <a href="{% url 'for_taxi' %}"><span class="mores">{% trans 'koproq' %}</span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="our-prod_it">
         <a href="{% url 'for_get_car' %}">
-          <img src="/static/images/xizmatlar-images/prod6.jpg" alt="ourprod6">
-        </a>
+          <img src="/static/images/xizmatlar-images/prod6.jpg" alt="ourprod6"></a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Avtomobil olish uchun</p>
-          <a href="{% url 'for_get_car' %}"><span class="mores">Ko'proq</span><i
-              class="fa-solid fa-arrow-right"></i></a>
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forBuyCar' %}</p><br/>
+          <a href="{% url 'for_get_car' %}"><span class="mores">{% trans 'koproq' %}</span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="our-prod_it">
@@ -74,31 +85,31 @@
           <img src="/static/images/xizmatlar-images/prod7.jpg" alt="ourprod7">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Qishloq xo'jalik texnikalari</p>
-          <a href="{% url 'for_agricultural_machinery' %}"><span class="mores">Ko'proq</span><i
-              class="fa-solid fa-arrow-right"></i></a>
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name"  style="font-size:16px;">{% trans 'forTech' %}</p>
+          <a href="{% url 'for_agricultural_machinery' %}"><span class="mores">{% trans 'koproq' %}</span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="our-prod_it">
         <a href="{% url 'for_housing' %}">
-          <img src="/static/images/xizmatlar-images/prod8.jpg" alt="ourprod8">
+          <img src="/static/images/xizmatlar-images/zalog4.jpg" alt="ourprod8" style="height:215px">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Uy joy uchun</p>
-          <a href="{% url 'for_housing' %}"><span class="mores">Ko'proq</span><i
-              class="fa-solid fa-arrow-right"></i></a>
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forHome' %}</p><br/>
+          <a href="{% url 'for_housing' %}"><span class="mores">{% trans 'koproq' %}</span><i
+            class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
       <div class="our-prod_it">
         <a href="{% url 'for_students' %}">
-          <img src="/static/images/xizmatlar-images/head-bus4.png" alt="ourprod8">
+          <img src="/static/images/xizmatlar-images/head-bus3.png" alt="ourprod8" style="width:230px;">
         </a>
         <div class="prod_it-desc">
-          <p class="tags">SHAXSLAR</p>
-          <p class="prod-name">Talabalar uchun</p>
-          <a href="{% url 'for_students' %}"><span class="mores">Ko'proq</span><i
+          <p class="tags">{% trans 'persons' %}</p>
+          <p class="prod-name">{% trans 'forStudents' %}</p><br/>
+          <a href="{% url 'for_students' %}"><span class="mores">{% trans 'koproq' %}</span><i
               class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>

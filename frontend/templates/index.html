@@ -1,27 +1,15 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Universal Xizmatlar Byurosi
 {% endblock %}
 
 {% block content %}
-<form id="click_form" action="https://my.click.uz/services/pay" method="get" target="_blank">
-  <input type="hidden" name="amount" value="1000" />
-  <input type="hidden" name="merchant_id" value="17332"/>
-  <input type="hidden" name="merchant_user_id" value="27867"/>
-  <input type="hidden" name="service_id" value="24855"/>
-  <input type="hidden" name="transaction_param" value="user123"/>
-  <input type="hidden" name="return_url" value="http://193.164.17.14:8001"/>
-  <button type="submit" class="click_logo"><i></i>Оплатить через CLICK</button>
-</form>
-
-
 <!-- Text animation start -->
-<section class="text__animation">
+<section class="text__animation" >
   <div class="containerr">
-    <marquee behavior="scroll" direction="left">Xurmatli foydalanuvchi agar siz qarz olish uchun ariza qoldirmoqchi
-      bo'lsangiz, avvalo saytimizdan ro'yhatdan o'ting, o'shandan keyin sizga kalit beriladi va o'sha kalit orqali siz
-      ariza qoldirishingiz va to'lovlarni anashu kalitni kiritgan xolda amalga oshirishingiz mumkin bo'ladi!</marquee>
+    <marquee style="margin: 80px 0 0 0;" behavior="scroll" direction="left">{% trans 'ogohlantirish' %}</marquee>
   </div>
 </section>
 <!-- Text animation end -->
@@ -30,20 +18,21 @@ Universal Xizmatlar Byurosi
 <section class="head-content">
   <div class="head-container containerr">
     <div class="head-content_text">
-      <h1>QULAY SHARTLARDA UZOQ MUDDATGA <span class="kredit_oling">QARZ OLING</span></h1>
+      <p style="text-transform: uppercase; color: #00b1df; font-weight: 700;">{% trans 'mainText' %}</p>
+      <h1 class="hc__text" style="font-size: 20px;">{% trans 'aimOfProject' %}</h1>
       <div class="char-block">
         <p class="char">
-          <span>Taklif</span> <br>
-          <font>0%(foizsiz)</font>
+          <span>{% trans 'offer' %}</span> <br>
+          <font>0%{% trans 'foizsiz' %}</font>
         </p>
         <p class="char">
-          <span>Pul</span> <br>
-          <font>1 milliard so'mgacha</font>
+          <span>{% trans 'money' %}</span> <br>
+          <font>{% trans 'upTo1bil' %}</font>
         </p>
       </div>
       <button type="button" class="but btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
         data-btn="">
-        <font>Qarz olish</font>
+        <font>{% trans 'apply' %}</font>
       </button>
     </div>
     <img class="head-img" src="/static/images/logo-beruniy2.png" alt="headimage">
@@ -61,115 +50,115 @@ Universal Xizmatlar Byurosi
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">Qishloq xo'jalik texnikalari</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forHousing' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>1 milliard so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo1bil' %}</font>
               </p>
             </div>
             <button data-btn="" type="button" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img1.png" />
         </div>
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">Bino va inshotlar</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz sug'urta orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forHousing' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>1 milliard so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo1bil' %}</font>
               </p>
             </div>
             <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img2.png" />
         </div>
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">Taxi faoliyati uchun</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz va sug'urtalash orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forHousing1' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>1 milliard so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo1bil' %}</font>
               </p>
             </div>
             <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img3.png" />
         </div>
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">Uy joy uchun</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forHome' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>400 million so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo400mln' %}</font>
               </p>
             </div>
             <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img4.png" />
         </div>
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">Avtomobil olish uchun</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz sug'urtalash orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forBuyCar' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>200 million so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo200mln' %}</font>
               </p>
             </div>
             <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img5.png" />
         </div>
         <div class="swiper-slide">
           <div class="ekspert">
-            <h4 class="headline__ekspert">YTT imoratlar uchun</h4>
-            <p class="p__ekspert">Garovsiz, kafilsiz va sug'urta orqali qarz</p>
+            <h4 class="headline__ekspert">{% trans 'forTaxiActivity' %}</h4>
+            <p class="p__ekspert">{% trans 'termsOfCooperation5' %}</p>
             <div class="char-block__ekspert">
               <p class="char__eks">
-                <span>Taklif</span><br>
-                <font>0%(foizsiz)</font>
+                <span>{% trans 'offer' %}</span><br>
+                <font>0%{% trans 'foizsiz' %}</font>
               </p>
               <p class="char__eks">
-                <span>Pul</span><br>
-                <font>1 milliard so'mgacha</font>
+                <span>{% trans 'money' %}</span><br>
+                <font>{% trans 'upTo1bil' %}</font>
               </p>
             </div>
             <button type="button" data-btn="" class="ekspert-btn btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Qarz olish</button>
+              data-bs-target="#exampleModal">{% trans 'apply' %}</button>
           </div>
           <img src="/static/images/xizmatlar-images/img6.png" />
         </div>
@@ -198,49 +187,49 @@ Universal Xizmatlar Byurosi
 <!-- Section padTop start -->
 <section class="padtop">
   <div class="containerr">
-    <h4 class="padtop__head">Qarz berish shartlari</h4>
+    <h4 class="padtop__head">{% trans 'termsOfCooperation' %}</h4>
     <div class="uslov">
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>01</p>
         </div>
-        <p>Bir vaqtning oʼzida bir nechta turdagi faoliyat uchun qarz olish imkoniyati</p>
+        <p>{% trans 'termsOfCooperation1' %}</p>
       </div>
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>02</p>
         </div>
-        <p>Oʼzbekiston Respublikasi fuqarolari va doimiy yashash uchun ruxsatnomaning mavjudligi</p>
+        <p>{% trans 'termsOfCooperation2' %}</p>
       </div>
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>03</p>
         </div>
-        <p>Qarz miqdori 100 million soʼmdan 1 milliard soʼmgacha 3 yildan 10 yilgacha</p>
+        <p>{% trans 'termsOfCooperation3' %}</p>
       </div>
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>04</p>
         </div>
-        <p>Yoshi 18 dan 65 yoshgacha</p>
+        <p>{% trans 'termsOfCooperation4' %}</p>
       </div>
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>05</p>
         </div>
-        <p>Garovsiz qarz , kafillarsiz, faqat sugʼurta</p>
+        <p>{% trans 'termsOfCooperation5' %}</p>
       </div>
       <div class="uslov_item">
         <div class="sy">
           <img src="/static/images/it.svg" alt="uslovItem">
           <p>06</p>
         </div>
-        <p>Moslashuvchan daromadni tasdiqlash tizimi</p>
+        <p>{% trans 'termsOfCooperation6' %}</p>
       </div>
     </div>
   </div>
@@ -250,23 +239,23 @@ Universal Xizmatlar Byurosi
 <!-- difficult situation section start -->
 <section class="difficult_sit">
   <div class="containerr">
-    <h3 class="diff__head">Hatto qiyin vaziyatlarda ham qarzni tasdiqlang</h3>
+    <h3 class="diff__head">{% trans 'cooperation' %}</h3>
     <div class="mini-ban">
       <div class="mini-ban_item1">
         <img src="/static/images/sit-icon1.svg" alt="siticon">
-        <p class="diff__pf">Boshqa banklarda allaqachon rad etishlar bo'lganda</p>
+        <p class="diff__pf">{% trans 'turnDownBanks' %}</p>
       </div>
       <div class="mini-ban_item2">
         <img src="/static/images/sit-icon2.svg" alt="siticon">
-        <p class="diff__pf">Yomon kredit tarixi</p>
+        <p class="diff__pf">{% trans 'badHistory' %}</p>
       </div>
       <div class="mini-ban_item3">
         <img src="/static/images/sit-icon3.svg" alt="siticon">
-        <p class="diff__pf">Kredit tarixi yo'q</p>
+        <p class="diff__pf">{% trans 'inexperienced' %}</p>
       </div>
       <div class="mini-ban_item4">
         <img src="/static/images/sit-icon4.svg" alt="siticon">
-        <p class="diff__pf">Rasmiy ish yo'q</p>
+        <p class="diff__pf">{% trans 'noFormalWork' %}</p>
       </div>
     </div>
   </div>
@@ -276,31 +265,27 @@ Universal Xizmatlar Byurosi
 <!-- work section start -->
 <section class="work_sec">
   <div class="containerr">
-    <h4 class="work_head">Biz qanday ishlaymiz</h4>
+    <h4 class="work_head">{% trans 'howWeWork' %}</h4>
     <div class="work">
       <div class="work_sec-item">
-        <img src="/static/images/how1.jpg" alt="howSecImg">
+        <img src="/static/images/hov1.jpg" alt="howSecImg">
         <div class="w__header">
-          <h5>Xabarnoma</h5>
-          <p>Biz banklarga xabar yuborish bilan shug`ullanmaymiz</p>
+          <h5>{% trans 'notification' %}</h5>
+          <p>{% trans 'howWeWork1' %}</p>
         </div>
       </div>
       <div class="work_sec-item">
-        <img src="/static/images/how2.jpg" alt="howSecImg">
+        <img src="/static/images/hov3.jpg" alt="howSecImg" style="width:100%; height:320px">
         <div class="w__header">
-          <h5>100 % tasdiqlash</h5>
-          <p>Banklardan qarzdorlik mavjud bo`lgan xolatda ham barcha ichki talablarini o`rganib, biz barcha kerakli
-            tekshiruvlarni amalga oshiramiz, yangi biznes loyiha tuzamiz va qarz so'rovini to'g'ri shirkat menejerlariga
-            tasdiqlash uchun yuboramiz
-          </p>
+          <h5>{% trans 'confirmation'%}</h5>
+          <p>{% trans 'howWeWork2'%}</p>
         </div>
       </div>
       <div class="work_sec-item">
-        <img src="/static/images/how3.jpg" alt="howSecImg">
+        <img src="/static/images/hov2.jpg" style="object-fit: cover; width: 100%; height: 300px;" alt="howSecImg">
         <div class="w__header">
           <h5>Xizmat</h5>
-          <p>Biz oldindan to`lov olmaymiz! faqat pochta xarajatlari uchun 10 ming so`m to`lov mavjud
-          </p>
+          <p>{% trans 'howWeWork3'%}</p>
         </div>
       </div>
     </div>
@@ -312,21 +297,75 @@ Universal Xizmatlar Byurosi
 <section class="quest_section">
   <div class="containerr">
     <div class="quest">
-      <h3 class="quest__head">Universal xizmatlar byurosi qarz brokeridan eng qulay shartlarda qarz oling</h3>
+      <h3 class="quest__head">{% trans 'unXizByu' %}</h3>
       <ul>
-        <li>Sug'urtani tejash</li>
-        <li>Yashirin bank to'lovlaridan xalos bo'ling</li>
-        <li>Bank filialiga qaraganda 2% pastroq stavka oling</li>
-        <li>Vaqtingizni tejang</li>
+        <li>{% trans 'text120' %}</li>
+        <li>{% trans 'text121' %}</li>
+        <li>{% trans "text122" %}</li>
+        <li>{% trans "text123"%}</li>
       </ul>
-      <p class="quest__p">Qarz olish uchun bizga ariza yuboring</p>
+      <p class="quest__p">{% trans 'text124' %}</p>
       <button type="button" data-btn="" class="questBtn btn btn-primary" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">Qarz olish</button>
+        data-bs-target="#exampleModal">{% trans 'apply' %}</button>
     </div>
   </div>
 </section>
 <!-- quest section end -->
-
+<section class="certifi">
+  <h3 class="s__title">{% trans 'serti' %}</h3>
+  <div class="containerr__ser">
+    <a href="/static/images/ГУВОХНОМА_ТАЙЁР_ЭЛЕКТРОННҚЙ_ВАРИАНТ.pdf" target="_blank"><img class="ser__img" src="/static/images/ser1.jpg" alt=""></a>
+    <a href="/static/images/СЕРТИФИКАТ ОРДЕНА.pdf" target="_blank"><img class="ser__img" src="/static/images/ser2.jpg" alt=""></a>
+  </div>
+</section>
+<style>
+  .certifi{
+    background-color: #FFFFFF;
+  }
+  .containerr__ser{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .ser__img{
+    width: 500px;
+    object-fit: cover;
+  }
+  .s__title{
+    text-align: center;
+    padding: 20px 10px;
+  }
+  @media only screen and (max-width: 567px){
+    .certifi{
+      background-color: #FFFFFF;
+      margin: auto;
+      padding: 0;
+    }
+    .containerr__ser{
+      width: 90%;
+      margin: auto;
+    }
+    .ser__img{
+      width: 350px;
+      object-fit: cover;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .ser__img{
+      width: 320px;
+      object-fit: cover;
+    }
+  }
+  @media only screen and (max-width: 280px){
+    .ser__img{
+      width: 250px;
+      object-fit: cover;
+    }
+  }
+</style>
 <!-- Maps section start -->
 <section class="mapsSec">
   <iframe

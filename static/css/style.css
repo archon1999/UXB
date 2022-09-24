@@ -33,6 +33,7 @@ a {
   z-index: 99;
   padding: 15px 0;
   background-color: #424242;
+  position: fixed;
 }
 header.stiky {
   position: fixed;
@@ -115,10 +116,11 @@ header.stiky {
 .header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
 .header .menu > .menu-item:hover > a {
   color: #00b1df;
+  transition: all 0.5s ease;
 }
 .header .menu > .menu-item > .sub-menu {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 220px;
+  width: 300px;
   position: absolute;
   left: 0;
   top: 100%;
@@ -130,6 +132,7 @@ header.stiky {
   opacity: 0;
   visibility: hidden;
   z-index: 999;
+
 }
 @media (min-width: 992px) {
   .header .menu > .menu-item-has-children:hover > .sub-menu {
@@ -318,15 +321,22 @@ header.stiky {
     display: flex;
   }
 }
+
+.text-warning {
+  padding-top: 100px !important;
+}
 .head-container {
   width: 100%;
   height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding: 50px 0 0 0; */
 }
 .head-content {
   background: #f8f8f9;
+  height: 100vh;
+  /* padding: 50px; */
 }
 .head-img {
   position: relative;
@@ -344,7 +354,7 @@ header.stiky {
 .head-content_text h1 {
   margin: 0;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 110%;
   text-transform: uppercase;
 }
@@ -906,21 +916,21 @@ header.stiky {
   color: #fff;
   background-position: center;
   background-size: cover;
-  background-image: url("/images/sit-ban1.jpg");
+  background-image: url("/static/images/sit-ban1.jpg");
 }
 .mini-ban_item2 {
   padding: 50px;
   color: #fff;
   background-position: center;
   background-size: cover;
-  background-image: url("/images/sit-ban2.jpg");
+  background-image: url("/static/images/sit-ban2.jpg");
 }
 .mini-ban_item3 {
   padding: 50px;
   color: #fff;
   background-position: center;
   background-size: cover;
-  background-image: url("/images/sit-ban3.jpg");
+  background-image: url("/static/images/sit-ban3.jpg");
 }
 
 .mini-ban_item4 {
@@ -928,7 +938,7 @@ header.stiky {
   color: #fff;
   background-position: center;
   background-size: cover;
-  background-image: url("/images/sit-ban4.jpg");
+  background-image: url("/static/images/sit-ban4.jpg");
 }
 .mini-ban {
   display: grid;
@@ -959,6 +969,19 @@ header.stiky {
   .padtop__head {
     font-size: 26px;
     text-align: center;
+  }
+  .head-content_text h1 {
+    font-size: 12px!important;
+  }                       /* //////o'zgarish */
+}
+
+@media only screen and (max-width: 375px) {
+  .text__animation marquee {  
+    padding-bottom: 20px!important;
+    margin: 30px 0 50px 0!important;
+  }
+  .head-content_text h1 {
+    font-size: 10px!important;
   }
 }
 /* difficult_sit end */
@@ -1414,12 +1437,12 @@ footer {
   border: 1px solid rgb(233, 232, 232);
 }
 #number_label,#key_label,#qarz_label,
-#srok_label,#ish_label,#murojat_label{
+#srok_label,#ish_label,#murojat_label, #tel_label{
   font-size: 18px;
   font-family: sans-serif, "Roboto";
   margin-top: 1%;
 }
-#number_input{
+#number_input, #tel_input{
   width: 100%;
   padding: 10px;
   border: 1px solid rgb(233, 232, 232);

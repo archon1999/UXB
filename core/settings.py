@@ -95,9 +95,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -118,13 +118,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'nazarbek.baltabaev@gmail.com'
-EMAIL_HOST_PASSWORD = 'avvxluawanfvxfep'
-
 AUTH_USER_MODEL = 'backend.User'
 
 
@@ -139,3 +132,15 @@ PAYMENT_VARIANTS = {
         'secret_key': 'WOpTHtih2TOng8'
     })
 }
+
+
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',
+    '/usr/local/lib/python3.10/site-packages/django/contrib/humanize/locale/',
+)
+
+LANGUAGE_CODE = 'uz-UZ'
+LANGUAGES = (
+    ('ru', 'Russian'),
+    ('uz', 'Uzbek'),
+)

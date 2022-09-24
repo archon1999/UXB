@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Asbob va uskunalar
@@ -10,18 +11,18 @@ Asbob va uskunalar
   <div class="containerr">
     <div class="buil__content">
       <div class="buil__head">
-        <p class="build__title">Tadbirkorlik faoliyatini amalga oshirish maqsadida asbob va uskunalar olish uchun 100 000 000 (yuz million) so'mdan 1 000 000 000 (bir milliard) so'mgacha <span style="color: #0069db">3 yildan - 10 yilgacha </span>bo'lgan muddatga qulay shartlarda oson va tez qarzni rasmiylashtiring</p>
+        <p class="build__title">{% trans 'asbobuskuna' %}</p>
         <div class="char-block__build">
           <p class="char__build">
-            <span>Taklif</span><br>
-            <font>0%(foizsiz)</font>
+            <span>{% trans 'offer' %}</span><br>
+            <font>0%{% trans 'foizsiz' %}</font>
           </p>
           <p class="char__build">
-            <span>Pul</span><br>
-            <font>1 milliard so'mgacha</font>
+            <span>{% trans 'money' %}</span><br>
+            <font>{% trans 'upTo1bil' %}</font>
           </p>
         </div>
-        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Qarz olish</button>
+        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">{% trans 'apply' %}</button>
       </div>
       <img class="buildimg" src="/static/images/head-fiz1.png" alt="buildingImage">
     </div>

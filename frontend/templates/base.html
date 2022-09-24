@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <!doctype html>
 <html lang="en">
 
@@ -38,31 +40,35 @@
           </div>
           <ul class="menu">
             <li class="menu-item menu-item-has-children">
-              <a href="#ourprodsec" data-toggle="sub-menu">Xizmatlar<i class="plus"></i></a>
-              <ul class="sub-menu">
-                <li class="menu-item"><a href="{% url 'for_buildings' %}">Bino va inshotlar uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_instruments' %}">Asbob va uskunalar uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_structures' %}">YTT imoratlar uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_land' %}">YTT yer uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_housing' %}">YTT uy joy uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_taxi' %}">Taxi faoliyati uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_get_car' %}">YTT Avtomobil olish uchun</a></li>
-                <li class="menu-item"><a href="{% url 'for_agricultural_machinery' %}">Qishloq xo'jalik texnikalari uchun</a>
-                <li class="menu-item"><a href="{% url 'for_students' %}">Talabalar uchun</a>
-                </li>
+              <a href="#ourprodsec" data-toggle="sub-menu">{% trans 'service' %}<i class="plus"></i></a>
+              <ul class="sub-menu" style="width:280px">
+                <li class="menu-item"><a href="{% url 'for_structures' %}">{% trans 'housing1' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_instruments' %}">{% trans 'housing3' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_buildings' %}">{% trans 'housing2' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_land' %}">{% trans 'housing' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_housing' %}">{% trans 'forHome' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_taxi' %}">{% trans 'forTaxi' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_get_car' %}">{% trans 'buyCar' %}</a></li>
+                <li class="menu-item"><a href="{% url 'for_agricultural_machinery' %}">{% trans 'forTech' %}</a>
+                <li class="menu-item"><a href="{% url 'for_students' %}">{% trans 'forStudents' %}</a></li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="{% url 'entities' %}">Yuridik shaxslar</a>
+              <a href="{% url 'entities' %}">{% trans 'Yuridik shaxslar' %}</a>
             </li>
             <li class="menu-item">
-              <a href="{% url 'individuals' %}">Jismoniy shaxslar</a>
+              <a href="{% url 'individuals' %}">{% trans 'Jismoniy shaxslar' %}</a>
             </li>
             <li class="menu-item">
-              <a href="{% url 'contact' %}">Aloqa</a>
+              <a href="{% url 'contact' %}">{% trans 'Aloqa' %}</a>
             </li>
             <li class="menu-item">
-              <a type="button" href="{% url 'registration' %}">Ro'yhatdan o'tish</a>
+              <a type="button" href="{% url 'registration' %}">{% trans "Ro'yhatdan o'tish" %}</a>
+            </li>
+            <li class="menu-item">
+                <a type="button" href="{% url 'set_language' 'uz' %}">Uz</a>
+            <li class="menu-item">
+                <a type="button" href="{% url 'set_language' 'ru' %}">Ru</a>
             </li>
           </ul>
         </nav>
@@ -80,63 +86,66 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Arizangizni qoldiring</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{% trans 'Arizangizni qoldiring' %}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="app-nav">
             <div class="app-text__content1">
-              <p>Jismoniy shaxslar</p>
+              <p>{% trans 'Jismoniy shaxslar' %}</p>
             </div>
             <div class="app-text__content2">
-              <p>Yuridik shaxslar</p>
+              <p>{% trans 'Yuridik shaxslar' %}</p>
             </div>
           </div>
           <div class="application__content1">
             <!-- Jismoniy shaxslar uchun form -->
             <form id="physical_form" action="/request/individual" method="POST">
               {% csrf_token %}
-              <label id="name_label" for="fio">FIO:</label><br>
-              <input name="full_name" id="name_input" type="text" required placeholder="name..."><br>
-              <label id="date_label" for="birthday">Tug'ilgan kun</label><br>
-              <input name="birth_day" id="date_input" type="date" required><br>
-              <label id="region_label" for="region">Viloyat</label><br>
+              <label id="name_label" for="fio">{% trans 'name' %}</label><br>
+              <input name="full_name" id="name_input" type="text" required maxlength="255"><br>
+              <label id="date_label" for="birthday">{% trans 'birthday' %}</label><br>
+              <input name="birth_day" id="date_input" type="date" required maxlength="255"><br>
+              <label id="region_label" for="region">{% trans 'viloyat' %}</label><br>
               <select name="region" id="region_select">
-                <option value="Xorazm">Xorazm</option>
-                <option value="Buxoro">Buxoro</option>
-                <option value="Farg'ona">Farg'ona</option>
-                <option value="Jizzax">Jizzax</option>
-                <option value="Andijon">Andijon</option>
-                <option value="Namangan">Namangan</option>
-                <option value="Navoiy">Navoiy</option>
-                <option value="Qashqadaryo">Qashqadaryo</option>
-                <option value="Qoraqalpog'iston Respublikasi">Qoraqalpog'iston Respublikasi</option>
-                <option value="Samarqand">Samarqand</option>
-                <option value="Sirdarydo">Sirdarydo</option>
-                <option value="Surxondaryo">Surxondaryo</option>
-                <option value="Toshkent">Toshkent</option>
+                <option value="Xorazm">{% trans 'xorazm' %}</option>
+                <option value="Buxoro">{% trans 'buxoro' %}</option>
+                <option value="Farg'ona">{% trans 'far' %}</option>
+                <option value="Jizzax">{% trans 'jiz' %}</option>
+                <option value="Andijon">{% trans 'and' %}</option>
+                <option value="Namangan">{% trans 'nam' %}</option>
+                <option value="Navoiy">{% trans 'nav' %}</option>
+                <option value="Qashqadaryo">{% trans 'qas' %}</option>
+                <option value="Qoraqalpog'iston Respublikasi">{% trans 'qor' %}</option>
+                <option value="Samarqand">{% trans 'sam' %}</option>
+                <option value="Sirdarydo">{% trans 'sir' %}</option>
+                <option value="Surxondaryo">{% trans 'sur' %}</option>
+                <option value="Toshkent">{% trans 'tosh' %}</option>
+                <option value="Toshkent">{% trans 'tosh1' %}</option>
               </select><br>
-              <label id="city_label" for="city">Shahar yoki tuman</label><br>
-              <input name="city" id="city_input" type="text" required placeholder="city"><br>
-              <label id="street_label" for="street_label">Ko'cha</label><br>
-              <input name="street" id="street_input" type="text" required placeholder="street"><br>
-              <label id="number_label" for="street_number">Uy raqami</label><br>
-              <input name="street_number" id="number_input" type="number" required placeholder="street number"><br>
+              <label id="city_label" for="city">{% trans 'districtorcity' %}</label><br>
+              <input name="city" id="city_input" type="text" required maxlength="255"><br>
+              <label id="street_label" for="street_label">{% trans 'street' %}</label><br>
+              <input name="street" id="street_input" type="text" required maxlength="255"><br>
+              <label id="number_label" for="street_number">{% trans 'numberOfHome' %}</label><br>
+              <input name="street_number" id="number_input" type="text" required><br>
 
-              <label id="qarz_label" for="qarz_input" >Qarz miqdori</label><br>
-              <input id="qarz_input" name="debt_value" type="text" placeholder="qarz miqdorini kiriting" required maxlength="6"><br>
-              <label id="srok_label" for="srok_input">Muddati</label><br>
-              <input id="srok_input" name="term" type="number" placeholder="qarzni qaytarish muddatini kiriting" required><br>
-              <label id="ish_label" for="ish_input">Yaratiladigan ish o'rni</label><br>
-              <input id="ish_input" name="created_workplace" type="number" placeholder="Tadbirkorlik faoliyati uchun"><br>
-              <label id="murojat_label" for="murojat_input">Murojat matni</label><br>
-              <textarea name="proposition" id="murojat_input" cols="50" rows="8" placeholder="Qarz olishdan maqsadingiz"></textarea required><br>
+              <label id="qarz_label" for="qarz_input" >{% trans 'qarzmiqdori' %}</label><br>
+              <input id="qarz_input" name="debt_value" type="text" required maxlength="20"><br>
+              <label id="srok_label" for="srok_input">{% trans 'muddati' %}</label><br>
+              <input id="srok_input" name="term" type="number" placeholder="{% trans 'qarzniqaytarish' %}" required><br>
+              <label id="tel_label" for="tel_input">{% trans 'telnomer' %}</label><br>
+              <input id="tel_input" name="phone_number" type="text" placeholder="+998991234567" maxlength="255" required><br>
+              <label id="ish_label" for="ish_input">{% trans 'ishorni' %}</label><br>
+              <input id="ish_input" name="created_workplace" type="number" maxlength="255" placeholder="{% trans 'forinter' %}"><br>
+              <label id="murojat_label" for="murojat_input">{% trans 'murojat' %}</label><br>
+              <textarea name="proposition" id="murojat_input" cols="50" rows="8" maxlength="255" placeholder="{% trans 'qarzmaqsadi' %}"></textarea required><br>
 
-              <label id="key_label" for="key_number">Kalit raqami</label><br>
-              <input name="key" id="key_input" type="text" placeholder="Kalit raqamini kiriting">
+              <label id="key_label" for="key_number">{% trans 'keynumber' %}</label><br>
+              <input name="key" id="key_input" type="text" placeholder="{% trans 'enterkey' %}">
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
-                <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans 'chiqish' %}</button>
+                <button type="submit" class="btn btn-primary">{% trans 'apply' %}</button>
               </div>
 
             </form>
@@ -145,34 +154,34 @@
             <!-- Yuridik shaxslar uchun -->
             <form id="physical_form" action="/request/entity" method="POST">
               {% csrf_token %}
-              <label id="name_label" for="fio">Tashkilot nomi</label><br>
-              <input name="company_name" id="name_input" type="text" required placeholder="company name"><br>
-              <label id="name_label" for="fio">Yuridik manzil</label><br>
-              <input name="address" id="name_input" type="text" required placeholder="address"><br>
-              <label id="name_label" for="fio">MFO:</label><br>
-              <input name="MFO" id="name_input" type="text" required placeholder="MFO"><br>
-              <label id="name_label" for="fio">INN</label><br>
-              <input name="INN" id="name_input" type="text" required placeholder="INN number"><br>
-              <label id="street_label" for="street_label">Tel:</label><br>
-              <input name="phone_number" id="street_input" type="number" required placeholder="telefon number"><br>
-              <label id="number_label" for="street_number">Hisob raqami</label><br>
-              <input name="account_number" id="number_input" type="number" required placeholder="account number"><br>
+              <label id="name_label" for="fio">{% trans 'companyName' %}</label><br>
+              <input name="company_name" id="name_input" type="text" required maxlength="255"><br>
+              <label id="name_label" for="fio">{% trans 'yuridikadres' %}</label><br>
+              <input name="address" id="name_input" type="text" required maxlength="255"><br>
+              <label id="name_label" for="fio">{% trans 'mfo' %}</label><br>
+              <input name="MFO" id="name_input" type="text" required maxlength="255"><br>
+              <label id="name_label" for="fio">{% trans 'inn' %}</label><br>
+              <input name="INN" id="name_input" type="text" required maxlength="255"><br>
+              <label id="street_label" for="street_label">{% trans 'telnomer' %}</label><br>
+              <input name="phone_number" id="street_input" type="number" required maxlength="255" placeholder="+998991234567"><br>
+              <label id="number_label" for="street_number">{% trans 'hisobraqam' %}</label><br>
+              <input name="account_number" id="number_input" type="number" required maxlength="255"><br>
 
-              <label id="qarz_label" for="qarz_input" >Qarz miqdori</label><br>
-              <input id="qarz_input" name="debt_value" type="text" placeholder="qarz miqdorini kiriting" required maxlength="6"><br>
-              <label id="srok_label" for="srok_input">Muddati</label><br>
-              <input id="srok_input" name="term" type="number" placeholder="qarzni qaytarish muddatini kiriting" required><br>
-              <label id="ish_label" for="ish_input">Yaratiladigan ish o'rni</label><br>
-              <input id="ish_input" name="created_workplace" type="number" placeholder="Tadbirkorlik faoliyati uchun"><br>
-              <label id="murojat_label" for="murojat_input">Murojat matni</label><br>
-              <textarea name="proposition" id="murojat_input" cols="50" rows="8" placeholder="Qarz olishdan maqsadingiz"></textarea required><br>
+              <label id="qarz_label" for="qarz_input" >{% trans 'qarzmiqdori' %}</label><br>
+              <input id="qarz_input" name="debt_value" type="text" placeholder="1 000 000 000" required maxlength="20"><br>
+              <label id="srok_label" for="srok_input">{% trans 'muddati' %}</label><br>
+              <input id="srok_input" name="term" type="number" placeholder="{% trans 'qarzniqaytarish' %}" required><br>
+              <label id="ish_label" for="ish_input">{% trans 'ishorni' %}</label><br>
+              <input id="ish_input" name="created_workplace" type="number" maxlength="255" placeholder="{% trans 'forinter' %}"><br>
+              <label id="murojat_label" for="murojat_input">{% trans 'murojat' %}</label><br>
+              <textarea name="proposition" id="murojat_input" cols="50" rows="8" required maxlength="255" placeholder="{% trans 'qarzmaqsadi' %}"></textarea><br>
 
-              <label id="key_label" for="key_number">Kalit raqami</label><br>
-              <input name="key" id="key_input" type="text" placeholder="Kalit raqamini kiriting">
+              <label id="key_label" for="key_number">{% trans 'keynumber' %}</label><br>
+              <input name="key" id="key_input" type="text" maxlength="255" placeholder="{% trans 'enterkey' %}">
 
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
-                <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans 'chiqish' %}</button>
+                <button type="submit" class="btn btn-primary">{% trans 'apply' %}</button>
               </div>
             </form>
           </div>
@@ -187,37 +196,37 @@
     <div class="containerr">
       <div class="footer-nav">
         <div class="footer-nav__block1">
-          <a href="#ourprodsec" class="main-link">Xizmatlar</a>
+          <a href="#ourprodsec" class="main-link">{% trans 'service' %}</a>
           <ul>
-            <li><a href="{% url 'for_buildings' %}">Bino va inshotlar uchun</a></li>
-            <li><a href="{% url 'for_instruments' %}">Asbob va uskunalar uchun</a></li>
-            <li><a href="{% url 'for_structures' %}">YTT imoratlar uchun</a></li>
-            <li><a href="{% url 'for_land' %}">YTT yer uchun</a></li>
-            <li><a href="{% url 'for_housing' %}">YTT uy joy uchun</a></li>
-            <li><a href="{% url 'for_taxi' %}">Taxi faoliyati uchun</a></li>
-            <li><a href="{% url 'for_get_car' %}">YTT Avtomobil olish uchun</a></li>
-            <li><a href="{% url 'for_agricultural_machinery' %}">Qishloq xo'jalik texnikalari uchun</a>
-            <li><a href="{% url 'for_students' %}">Talabalar uchun</a>
+            <li><a href="{% url 'for_structures' %}">{% trans 'housing1' %}</a></li>
+            <li><a href="{% url 'for_instruments' %}">{% trans 'housing3' %}</a></li>
+            <li><a href="{% url 'for_buildings' %}">{% trans 'housing2' %}</a></li>
+            <li><a href="{% url 'for_land' %}">{% trans 'housing' %}</a></li>
+            <li><a href="{% url 'for_housing' %}">{% trans 'forHome' %}</a></li>
+            <li><a href="{% url 'for_taxi' %}">{% trans 'forTaxi' %}</a></li>
+            <li><a href="{% url 'for_get_car' %}">{% trans 'buyCar' %}</a></li>
+            <li><a href="{% url 'for_agricultural_machinery' %}">{% trans 'forTech' %}</a>
+            <li><a href="{% url 'for_students' %}">{% trans 'forStudents' %}</a>
           </ul>
         </div>
         <div class="footer-nav__block2">
-          <a href="{% url 'individuals' %}" class="main-link">Yuridik shaxslar</a>
-          <a href="{% url 'entities' %}" class="main-link">Jismoniy shaxslar</a>
-          <a href="{% url 'contact' %}" class="main-link">Aloqa</a>
+          <a href="{% url 'individuals' %}" class="main-link">{% trans 'Yuridik shaxslar' %}</a>
+          <a href="{% url 'entities' %}" class="main-link">{% trans 'Jismoniy shaxslar' %}</a>
+          <a href="{% url 'contact' %}" class="main-link">{% trans 'Aloqa' %}</a>
           <div class="footer-nav_block3">
-            <h6>Bizni ijtimoiy tarmoqlarda kuzatib boring</h6>
-            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://t.me/Akmal_8882"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/akmal_8882"><i class="fa-brands fa-instagram-square"></i></a>
+            <h6>{% trans 'socialnet' %}</h6>
+            <a href="https://www.youtube.com/channel/UCi9O23uJpsG3uZEFqn2FDUQ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://t.me/beruniy_avlodlari"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.instagram.com/beruniy_avlodlari"><i class="fa-brands fa-instagram-square"></i></a>
           </div>
         </div>
         <div class="footer-call">
-          <h4>Universal Xizmatlar Byurosi</h4>
+          <h4>{% trans 'beruniy' %}</h4>
           <div class="logo-footer">
-            <a href="/"><i class="fa-solid fa-handshake"></i> UXB</a>
+            <a href="/"><i class="fa-solid fa-handshake"></i> {% trans 'UXB' %}</a>
           </div>
-          <p>Biz har qanday savollarga javob beramiz</p>
-          <a href="tel: +998991234567" type="phone"><i class="fa-solid fa-phone"> +998991234567</i></a>
+          <p>{% trans 'savollar' %}</p>
+          <a href="tel: +998900900174" type="phone"><i class="fa-solid fa-phone"> +998900900174</i></a>
         </div>
       </div>
     </div>

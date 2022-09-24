@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Jismoniy shaxslar
@@ -6,25 +7,23 @@ Jismoniy shaxslar
 
 {% block content %}
   <!-- Head content start -->
-  <section class="head-content">
-    <div class="head-container containerr">
+  <section class="head-content" >
+    <div style="padding-top: 100px" class="head-container containerr">
       <div class="head-content_text">
-        <h1>JISMONIY SHAXSLAR UCHUN QULAY SHARTLARDA ONLINE <span class="kredit_oling">QARZ OLING</span></h1>
+        <h1>{% trans "jismoniy" %}</h1>
         <div class="char-block">
           <p class="char">
-            <span>Taklif</span> <br>
-            <font>0%(foizsiz)</font>
+            <span>{% trans 'offer' %}</span> <br>
+            <font>0%{% trans 'foizsiz' %}</font>
           </p>
           <p class="char">
-            <span>Pul</span> <br>
-            <font>1 milliard so'mgacha</font>
+            <span>{% trans 'money' %}</span> <br>
+            <font>{% trans 'upTo1bil' %}</font>
           </p>
         </div>
-        <button type="button" class="but btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-btn="">
-          <font>Qarz olish</font>
-        </button>
+        <button type="button" class="but btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-btn=""><font>{% trans 'apply' %}</font></button>
       </div>
-      <img class="head-img" src="/static/images/xizmatlar-images/head-bus7.png" alt="headimage">
+      <img class="head-img" src="/static/images/uxb.png" alt="headimage">
     </div>
   </section>
 <!-- Head content end -->

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Qishloq xo'jalik texnikalari
@@ -6,24 +7,24 @@ Qishloq xo'jalik texnikalari
 
 {% block content %}
 <!-- Head content start -->
-<section class="buildingSec">
+<section class="buildingSec" style="margin-top: 100px;">
   <div class="containerr">
     <div class="buil__content">
       <div class="buil__head">
-        <p class="build__title">Fermer xo'jaliklari qishloq xo'jalik texnikalarini xarid qilish uchun,Issiq xonalar, muzlatkich uskunalarini sotib olish uchun,qishloq xo'jaligi maxsulotlarini qayta ishlash uchun asbob-uskunalar xarid qilish, sut va sut maxsulotlarini qayta ishlash uchun 100 000 000 (yuz million) so'mdan 1 000 000 000 (1 milliard) so'mgacha <span style="color: #0069db">3 yildan - 10 yilgacha </span>qarz oling</p>
+        <p class="build__title">{% trans 'fermer' %}</p>
         <div class="char-block__build">
           <p class="char__build">
-            <span>Taklif</span><br>
-            <font>0%(foizsiz)</font>
+            <span>{% trans 'offer' %}</span><br>
+            <font>0%{% trans 'foizsiz' %}</font>
           </p>
           <p class="char__build">
-            <span>Pul</span><br>
-            <font>1 milliard</font>
+            <span>{% trans 'money' %}</span><br>
+            <font>{% trans 'upTo1bil' %}</font>
           </p>
         </div>
-        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Qarz olish</button>
+        <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">{% trans 'apply' %}</button>
       </div>
-      <img class="buildimg" src="/static/images/xizmatlar-images/head-bus7.png">
+      <img class="buildimg" src="/static/images/xizmatlar-images/qishloq.png" width="550px">
     </div>
   </div>
 </section>

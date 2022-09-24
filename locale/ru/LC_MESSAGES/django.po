@@ -1,0 +1,446 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-04 13:06-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XXXXX\n"
+"Language-Team: Es XXXX\n"
+"Language: Es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "mainText"
+msgstr "ЭТОТ ПРОЕКТ ПОСВЯЩЕН 1050-ЛЕТИЮ СО ДНЯ РОЖДЕНИЯ АБУ РАЙХАНА БЕРУНИ."
+
+msgid "offer"
+msgstr "Предложение"
+
+msgid "apply"
+msgstr "Подавать заявление"
+
+msgid "upTo400mln"
+msgstr "до 400 млн сумов"
+
+msgid "upTo200mln"
+msgstr "до 200 млн сумов"
+
+msgid "upTo1bil"
+msgstr "до 1 млрд. сумов"
+
+msgid "money"
+msgstr "Деньги"
+
+msgid "text15"
+msgstr "кредит под страховку без залога и поручителей"
+
+msgid "takeOpportunity"
+msgstr "ИСПОЛЬЗУЙТЕ ВЫГОДНЫЕ УСЛОВИЯ ДЛЯ ДОСТИЖЕНИЯ СВОИХ ЦЕЛЕЙ!"
+
+msgid "text3"
+msgstr "Международный общественный фонд «Беруний авлодлари», в размере от 100 млн сумов до 1 млрд сумов на страховых условиях для развития сотрудничества, создания новых рабочих мест, улучшения жилищных условий и осуществления предпринимательской деятельности гражданам Республики Узбекистан на срок от 3 до 10 лет предлагает сотрудничество и пользование денежными средствами без поручителя и без процентов"
+
+msgid "housing"
+msgstr "При покупке земельного участка индивидуально"
+
+msgid "housing1"
+msgstr "Для строительства зданий и сооружений"
+
+msgid "housing2"
+msgstr "Здания и сооружения для покупки"
+
+msgid "housing3"
+msgstr "На покупку инструментов и оборудования"
+
+msgid "forTaxi"
+msgstr "Для таксомоторных перевозок юридическим лицам"
+
+msgid "buyCar"
+msgstr "Купить автомобиль по отдельности"
+
+msgid "forTech"
+msgstr "На приобретение сельскохозяйственной техники юридическим лицам"
+
+msgid "forHome"
+msgstr "Приобрести жилье по отдельности"
+
+msgid "forHousing"
+msgstr "При покупке земельного участка индивидуально"
+
+msgid "forHousing1"
+msgstr "Для строительства зданий и сооружений"
+
+msgid "forHousing2"
+msgstr "На приобретение зданий и сооружений"
+
+msgid "forHousing3"
+msgstr "На приобретение зданий и сооружений"
+
+msgid "forBuyCar"
+msgstr "Купить автомобиль по отдельности"
+
+msgid "forTaxiActivity"
+msgstr "Для таксомоторных перевозок юридическим лицам"
+
+msgid "termsOfCooperation"
+msgstr "Условия сотрудничества"
+
+msgid "termsOfCooperation1"
+msgstr "Возможность заниматься несколькими видами деятельности одновременно"
+
+msgid "termsOfCooperation2"
+msgstr "Граждане Республики Узбекистан и наличие постоянного вида на жительство"
+
+msgid "termsOfCooperation3"
+msgstr "Возможность сотрудничества от 1 млн сум до 1 млрд сум от 3 до 10 лет"
+
+msgid "termsOfCooperation4"
+msgstr "Возраст от 18 до 65 лет"
+
+msgid "termsOfCooperation5"
+msgstr "Без залога, без поручителей, только страховка"
+
+msgid "termsOfCooperation6"
+msgstr "Использование приобретенных предметов и оборудования в качестве залога"
+
+msgid "cooperation"
+msgstr "Подтверждение сотрудничества даже в сложных ситуациях"
+
+msgid "turnDownBanks"
+msgstr "Когда уже есть отказы в других банках"
+
+msgid "badHistory"
+msgstr "Плохая кредитная история"
+
+msgid "inexperienced"
+msgstr "отсутствие опыта"
+
+msgid "noFormalWork"
+msgstr "отсутствие опыта"
+
+msgid "howWeWork"
+msgstr "Kак мы работаем"
+
+msgid "notification"
+msgstr "Уведомление"
+
+msgid "howWeWork1"
+msgstr "Мы не отправляем сообщения в другие конторы или банки о соискателях, желающих сотрудничать"
+
+msgid "confirmation"
+msgstr "100% подтверждение"
+
+msgid "service"
+msgstr "Oбслуживание"
+
+msgid "howWeWork2"
+msgstr "Даже в случае задолженности от других банков, изучив все их внутренние требования, мы проводим все необходимые проверки, создаем новый бизнес-проект и отправляем заявку на сотрудничество на согласование нужным управляющим фондами."
+
+msgid "howWeWork3"
+msgstr "Мы не берем предоплату! Взимается комиссия в размере 10 000 сум только за почтовые расходы."
+
+msgid "unXizByu"
+msgstr "Сотрудничайте с Международным общественным фондом «Беруний авлодлари» на самых выгодных условиях"
+
+msgid "text120"
+msgstr "Избегайте поиска поручителей и залога"
+
+msgid "text121"
+msgstr "Избегайте банковских процентных ставок"
+
+msgid "text122"
+msgstr "На основании страховки"
+
+msgid "text123"
+msgstr "Экономьте свое время"
+
+msgid "text124"
+msgstr "Отправьте нам заявку на сотрудничество и членство"
+
+msgid "aimOfProject"
+msgstr "С ЦЕЛЬЮ РАСШИРЕНИЯ СОТРУДНИЧЕСТВА ОБЩЕСТВЕННЫЙ ФОНД БЕРУНИ-АВЛОДЛАРИ ПРЕДЛАГАЕТ СВОИМ УЧАСТНИКАМ-ГРАЖДАНАМ РЕСПУБЛИКИ УЗБЕКИСТАН СОТРУДНИЧАТЬ НА СРОК ОТ 3 ДО 10 ЛЕТ ДЛЯ СОЗДАНИЯ НОВЫХ РАБОЧИХ МЕСТ, УЛУЧШЕНИЯ ЖИЛИЩНЫХ УСЛОВИЙ И ОСУЩЕСТВЛЕНИЯ ПРЕДПРИНИМАТЕЛЬСКОЙ ДЕЯТЕЛЬНОСТИ"
+
+msgid "forStudents"
+msgstr "Для студентов"
+
+msgid "Yuridik shaxslar"
+msgstr "Юридические лица"
+
+msgid "Jismoniy shaxslar"
+msgstr "Физические лица"
+
+msgid "Aloqa"
+msgstr "Связаться"
+
+msgid "Ro'yhatdan o'tish"
+msgstr "Регистироваться"
+
+msgid "Arizangizni qoldiring"
+msgstr "Подать заявку"
+
+msgid "ogohlantirish"
+msgstr "Уважаемый пользователь, если вы хотите подать заявку на кредит, сначала зарегистрируйтесь на нашем сайте, после этого вы получите ключ, и с этим ключом вы сможете подать заявку!"
+
+msgid "foizsiz"
+msgstr "(беспроцентная)"
+
+msgid "biznes"
+msgstr "Бизнес"
+
+msgid "koproq"
+msgstr "Более"
+
+msgid "serti"
+msgstr "Сертификат и свидетельство"
+
+msgid "persons"
+msgstr "Лица"
+
+msgid "name"
+msgstr "ФИО:*"
+
+msgid "birthday"
+msgstr "День рождения *"
+
+msgid "viloyat"
+msgstr "Oбласть*"
+
+msgid "xorazm"
+msgstr "Хорезм"
+
+msgid "buxoro"
+msgstr "Бухара"
+
+msgid "tosh"
+msgstr "Ташкентская область"
+
+msgid "sam"
+msgstr "Самарканд"
+
+msgid "and"
+msgstr "Андижан"
+
+msgid "nav"
+msgstr "Навои"
+
+msgid "qas"
+msgstr "Кашкадарья"
+
+msgid "sur"
+msgstr "Сурхандарьинская"
+
+msgid "nam"
+msgstr "Наманган"
+
+msgid "tosh1"
+msgstr "город Ташкент"
+
+msgid "jiz"
+msgstr "Джизак"
+
+msgid "sir"
+msgstr "Сырдарья"
+
+msgid "far"
+msgstr "Фергана"
+
+msgid "qor"
+msgstr "Республика Каракалпакстан"
+
+msgid "districtorcity"
+msgstr "Город или район *"
+
+msgid "street"
+msgstr "Улица *"
+
+msgid "numberOfHome"
+msgstr "Номер дома *"
+
+msgid "qarzmiqdori"
+msgstr "Сумма кредита *"
+
+msgid "muddati"
+msgstr "Срок*"
+
+msgid "qarzniqaytarish"
+msgstr "введите период возврата"
+
+msgid "telnomer"
+msgstr "Номер телефона*"
+
+msgid "ishorni"
+msgstr "Рабочие места, которые необходимо создать"
+
+msgid "forinter"
+msgstr "Для хозяйственной деятельности"
+
+msgid "murojat"
+msgstr "Текст заявки *"
+
+msgid "qarzmaqsadi"
+msgstr "Ваша цель сотрудничества"
+
+msgid "keynumber"
+msgstr "Номер ключа*"
+
+msgid "enterkey"
+msgstr "Введите номер ключа"
+
+msgid "chiqish"
+msgstr "Выход"
+
+msgid "companyName"
+msgstr "Название организации*"
+
+msgid "yuridikadres"
+msgstr "Юридический адрес*"
+
+msgid "mfo"
+msgstr "МФО:*"
+
+msgid "inn"
+msgstr "ИНН*"
+
+msgid "hisobraqam"
+msgstr "Номер счета*"
+
+msgid "socialnet"
+msgstr "Следите за нами в социальных сетях"
+
+msgid "beruniy"
+msgstr "Беруний-Авлодлари"
+
+msgid "UXB"
+msgstr "УХБ"
+
+msgid "savollar"
+msgstr "Мы ответим на любые вопросы"
+
+msgid "boglanish"
+msgstr "Cвяжитесь с нами"
+
+msgid "manzil"
+msgstr "АДРЕС"
+
+msgid "ouraddress"
+msgstr "Республика Каракалпакстан, город Беруний, улица Дружбы Народов, дом 6А."
+
+msgid "xarita"
+msgstr "Пройдите через Google Карты"
+
+msgid "workplan"
+msgstr "РАБОЧИЕ ДНИ"
+
+msgid "ishsoati"
+msgstr "ПН-СБ. с 9:00 до 18:00"
+
+msgid "yakshanba"
+msgstr "Воскресенье выходной день"
+
+msgid "tel"
+msgstr "ТЕЛЕФОН"
+
+msgid "adres"
+msgstr "Улица Фаёзова, Берунийский район"
+
+msgid "ofis"
+msgstr "Наша организация"
+
+msgid "online"
+msgstr "СОТРУДНИЧАЙТЕ ОНЛАЙН НА УДОБНЫХ УСЛОВИЯХ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ"
+
+msgid "xamkor"
+msgstr "СОТРУДНИЧАЙТЕ"
+
+msgid "upTo2mlrd"
+msgstr "до 2 млрд сумов"
+
+msgid "fermer"
+msgstr "Использование   средств   Фонда   Фермерские хозяйства:  от  1 000 000 (1 миллионов) до 1 000 000 000 (один миллиард) сумов на приобретение сельхозтехники, теплиц, холодильного оборудования, оборудования для переработки продукции от 3 лет - до 10 лет"
+
+msgid "forBuilding"
+msgstr "Использование средств фонда  в размере от 1 000 000 (Один миллион) до 400 000 000 (Четыреста миллионов) сум на срок от 3 до 10 лет для приобретения зданий и оборудования в целях осуществления предпринимательской деятельности."
+
+msgid "avtomobil"
+msgstr "Использование средств фонда на 3 года от 1 000 000 (1 миллионов) сум до 200 000 000 (двести миллионов) сум на покупку автомобиля с целью самозанятости"
+
+msgid "uyjoy"
+msgstr "Использование средств фонда от 1 000 000 (1 миллионов) до 400 000 000 (четыреста миллионов) сумов на строительство индивидуального жилья сроком на 10 лет."
+
+msgid "asbobuskuna"
+msgstr "Использовать денежные средства  фонда  от 1 000 000 (Один миллион)  сумов до 1 000 000 000 (один миллиард) сумов на  срок от 3 до 10 лет для приобретения инструментов и оборудования для предпринимательской деятельности"
+
+msgid "auksion"
+msgstr "Использование средств фонда от 1 000 000 (Один миллион) до 400 000 000 (Четыреста миллионов) сумов для приобретения земельных участков на индивидуальных торгах сроком от 3 до 10 лет."
+
+msgid "imoratlar"
+msgstr "Использовать денежные средства  фонда  от 1 000 000 (Один миллион)  сумов до 1 000 000 000 (один миллиард) сумов на строительство зданий и сооружений в целях осуществления индивидуальной предпринимательской деятельности от 5 до 10 лет"
+
+msgid "student"
+msgstr "Использовать средства фонда в течение 10 лет для оплаты контрактов студентов высших учебных заведений, техникумов и профессиональных колледж."
+
+msgid "upTo20mln"
+msgstr "до 20 млн сумов"
+
+msgid "taxi"
+msgstr "Использование средств фонда от 1 000 000 (Один миллион) до 1 000 000 000 (Один миллиард) сум на осуществление таксомоторных перевозок сроком от 3 до 10 лет при создании юридического лица."
+
+msgid "jismoniy"
+msgstr "СОТРУДНИЧАЕМ ОНЛАЙН НА ВЫГОДНЫХ УСЛОВИЯХ ДЛЯ ФИЗИЧЕСКИХ ЛИЦ"
+
+msgid "royhatdanotish"
+msgstr "Регистрация"
+
+msgid "success"
+msgstr "Вы успешно зарегистрировались! Ключ отправлен на ваш телефон"
+
+msgid "kirish"
+msgstr "Войти"
+
+msgid "registr"
+msgstr "Регистрация платная. Расходы:"
+
+msgid "som"
+msgstr "сум"
+
+msgid "fullName"
+msgstr "Ваше полное имя"
+
+msgid "telnumber"
+msgstr "Введите свой номер телефона"
+
+msgid "mavjud"
+msgstr "Есть такой номер телефона"
+
+msgid "createpassword"
+msgstr "Создайте пароль"
+
+msgid "accept"
+msgstr "Подтвердить Пароль"
+
+msgid "shartlar"
+msgstr "Я принимаю все  использования"
+
+msgid "qabul"
+msgstr "условия"
+
+msgid "qildim"
+msgstr "."
+
+msgid "tasdiqlash"
+msgstr "Подтверждать!"
+
+msgid "payment"
+msgstr "Специальный код будет отправлен вам после оплаты!"
+
+msgid "paymentSuccess"
+msgstr "Платеж прошел успешно!"
+
+msgid "paymentCode"
+msgstr "Ваша заявка будет принята после оплаты!"
+
+msgid "click"
+msgstr "Оплата CLICK."
+

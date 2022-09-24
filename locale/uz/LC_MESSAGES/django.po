@@ -1,0 +1,446 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-04 13:06-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XXXXX\n"
+"Language-Team: Es XXXX\n"
+"Language: Es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "mainText"
+msgstr "USHBU LOYIHA ABU RAYXON BERUNIYNING 1050 YILLIGIGA BAG'ISHLANADI."
+
+msgid "offer"
+msgstr "Taklif"
+
+msgid "apply"
+msgstr "Ariza yuborish"
+
+msgid "upTo400mln"
+msgstr "400 million so'mgacha"
+
+msgid "upTo200mln"
+msgstr "200 million so'mgacha"
+
+msgid "upTo1bil"
+msgstr "1 milliard so'mgacha"
+
+msgid "money"
+msgstr "Pul"
+
+msgid "text15"
+msgstr "Garovsiz,kafilsiz sug'urtalash orqali qarz"
+
+msgid "takeOpportunity"
+msgstr "MAQSADLARINGIZNI AMALGA OSHIRISH UCHUN QULAY SHAROITDAN FOYDALANING!"
+
+msgid "text3"
+msgstr "Beruniy Avlodlari xalqaro jamoat fondi, 0 % miqdorida O'zbekidton Respublikasi fuqarolariga 3-yildan 10-yilgacha bo'lgan muddatga: Kooperatsiyani rivojlantirish, yangi ish o'rinlarini yaratish, uy-joy sharoitini yaxshilash va tadbirkorlik faoliyatini amalga oshirish maqsadida sug'urtalangan shartlarda 100 million so'mdan 1 milliard so'mgacha bo'lgan miqdordagi pul mablag'laridan kafilsiz va foizsiz foydalanishni va xamkorlik qilishni taklif kiladi"
+
+msgid "housing"
+msgstr "Yakka tartibda yer uchastka harid qilish uchun"
+
+msgid "housing1"
+msgstr "Bino va inshotlar qurilishi uchun"
+
+msgid "housing2"
+msgstr "Bino va Inshootlar xarid qilish uchun"
+
+msgid "housing3"
+msgstr "Asbob va uskunalar xaridi uchun"
+
+msgid "forTaxi"
+msgstr "Yuridik shaxslarga taxi faoliyati uchun"
+
+msgid "buyCar"
+msgstr "Yakka tartibda avtomobil xarid qilish uchun"
+
+msgid "forTech"
+msgstr "Yuridik shaxslarga qishloq xo'jalik texnikalari xaridi uchun"
+
+msgid "forHome"
+msgstr "Yakka tartibdagi uy joy xarid qilish uchun"
+
+msgid "forHousing"
+msgstr "Yakka tartibda yer uchastkasi olish uchun"
+
+msgid "forHousing1"
+msgstr "Bino va inshotlar qurilishi uchun"
+
+msgid "forHousing2"
+msgstr "Bino va inshotlar xarid qilish uchun"
+
+msgid "forHousing3"
+msgstr "Yakka tartibdagi uy-joy sotib olish uchun"
+
+msgid "forBuyCar"
+msgstr "Yakka tartibda avtomobil xarid qilish uchun"
+
+msgid "forTaxiActivity"
+msgstr "Yuridik shaxslarga taxi faoliyati uchun"
+
+msgid "termsOfCooperation"
+msgstr "Hamkorlik qilish shartlari"
+
+msgid "termsOfCooperation1"
+msgstr "Bir vaqtning oʼzida bir nechta turdagi faoliyat uchun hamkorlik qilish imkoniyati"
+
+msgid "termsOfCooperation2"
+msgstr "Oʼzbekiston Respublikasi fuqarolari va doimiy yashash uchun ruxsatnomaning mavjudligi"
+
+msgid "termsOfCooperation3"
+msgstr "Xamkorlik miqdori 1 million soʼmdan 1 milliard soʼmgacha 3 yildan 10 yilgacha"
+
+msgid "termsOfCooperation4"
+msgstr "Yoshi 18 dan 65 yoshgacha"
+
+msgid "termsOfCooperation5"
+msgstr "Garovsiz, kafillarsiz, faqat sugʼurta asosida"
+
+msgid "termsOfCooperation6"
+msgstr "Sotib olingan buyum ва  uskunalarni garov o'rnida foydalanish"
+
+msgid "cooperation"
+msgstr "Hatto qiyin vaziyatlarda ham hamkorlikni tasdiqlash"
+
+msgid "turnDownBanks"
+msgstr "Banklarda allaqachon rad etishlar bo'lganda"
+
+msgid "badHistory"
+msgstr "Yomon qarzdorlik tarixi"
+
+msgid "inexperienced"
+msgstr "Tajribaga ega bo'lmaslik"
+
+msgid "noFormalWork"
+msgstr "Rasmiy ish yo'q"
+
+msgid "howWeWork"
+msgstr "Biz qanday ishlaymiz"
+
+msgid "notification"
+msgstr "Xabarnoma"
+
+msgid "howWeWork1"
+msgstr "Biz hamkorlik qilmoqchi bo'lgan talabgorlar to`g`risida boshqa idora yoki banklarga xabar yuborish bilan shug`ullanmaymiz"
+
+msgid "confirmation"
+msgstr "100% tasdiqlash"
+
+msgid "service"
+msgstr "Xizmatlar"
+
+msgid "howWeWork2"
+msgstr "Boshqa Banklardan qarzdorlik mavjud bo`lgan xolatda ham barcha ichki talablarini o`rganib, biz barcha kerakli tekshiruvlarni amalga oshiramiz, yangi biznes loyiha tuzamiz va hamkorlik  so'rovini to'g'ri fond  menejerlariga tasdiqlash uchun yuboramiz"
+
+msgid "howWeWork3"
+msgstr "Biz oldindan to`lov olmaymiz! faqat pochta xarajatlari uchun 10 ming so`m to`lov mavjud"
+
+msgid "unXizByu"
+msgstr "Beruniy avlodlari Xalqaro Jamoat fondi bilan eng qulay sharoitlarda hamkorlik qiling"
+
+msgid "text120"
+msgstr "Kafil va garov qidirishdan xolos bo'ling"
+
+msgid "text121"
+msgstr "Bank foiz stavkalaridan xolos bo'ling"
+
+msgid "text122"
+msgstr "Sug'urta asosida"
+
+msgid "text123"
+msgstr "Vaqtingizni tejang"
+
+msgid "text124"
+msgstr "Hamkorlik qilish va a'zo bo'lish uchun bizga ariza yuboring"
+
+msgid "aimOfProject"
+msgstr "BERUNIY-AVLODLARI JAMOAT FONDI HAMKORLIKNI KENGAYTIRISH MAQSADIDA OʻZBEKISTON RESPUBLIKASI FUQAROSI BO'LGAN O'Z A'ZOLARIGA 3-YILDAN 10-YILGACHA BOʻLGAN MUDDATGA YANGI ISH OʻRINLARINI YARATISH, UY-JOY SHAROITINI YAXSHILASH VA TADBIRKORLIK FAOLIYATINI AMALGA OSHIRISH UCHUN HAMKORLIK QILISHNI TAKLIF QILADI"
+
+msgid "forStudents"
+msgstr "Talabalar uchun"
+
+msgid "Yuridik shaxslar"
+msgstr "Yuridik shaxslar"
+
+msgid "Jismoniy shaxslar"
+msgstr "Jismoniy shaxslar"
+
+msgid "Aloqa"
+msgstr "Aloqa"
+
+msgid "Ro'yhatdan o'tish"
+msgstr "Ro'yhatdan o'tish"
+
+msgid "Arizangizni qoldiring"
+msgstr "Arizangizni qoldiring"
+
+msgid "ogohlantirish"
+msgstr "Xurmatli foydalanuvchi agar siz qarz olish uchun ariza qoldirmoqchi bo'lsangiz, avvalo saytimizdan ro'yhatdan o'ting, o'shandan keyin sizga kalit beriladi va o'sha kalit orqali siz ariza qoldirishingiz mumkin bo'ladi!"
+
+msgid "foizsiz"
+msgstr "(foizsiz)"
+
+msgid "biznes"
+msgstr "Biznes"
+
+msgid "koproq"
+msgstr "Ko'proq"
+
+msgid "serti"
+msgstr "Sertifikat va Guvoxnomalar"
+
+msgid "persons"
+msgstr "SHAXSLAR"
+
+msgid "name"
+msgstr "FISH: *"
+
+msgid "birthday"
+msgstr "Tug'ilgan kun *"
+
+msgid "viloyat"
+msgstr "Viloyat*"
+
+msgid "xorazm"
+msgstr "Xorazm"
+
+msgid "buxoro"
+msgstr "Buxoro"
+
+msgid "tosh"
+msgstr "Toshkent viloyati"
+
+msgid "sam"
+msgstr "Samarqand"
+
+msgid "and"
+msgstr "Andijon"
+
+msgid "nav"
+msgstr "Navoiy"
+
+msgid "qas"
+msgstr "Qashqadaryo"
+
+msgid "sur"
+msgstr "Surxondaryo"
+
+msgid "nam"
+msgstr "Namangan"
+
+msgid "tosh1"
+msgstr "Toshkent shahar"
+
+msgid "jiz"
+msgstr "Jizzax"
+
+msgid "sir"
+msgstr "Sirdaryo"
+
+msgid "far"
+msgstr "Farg'ona"
+
+msgid "qor"
+msgstr "Qoraqalpog'iston Respublikasi"
+
+msgid "districtorcity"
+msgstr "Shahar yoki tuman *"
+
+msgid "street"
+msgstr "Ko'cha *"
+
+msgid "numberOfHome"
+msgstr "Uy raqami *"
+
+msgid "qarzmiqdori"
+msgstr "Qarz miqdori *"
+
+msgid "muddati"
+msgstr "Muddati*"
+
+msgid "qarzniqaytarish"
+msgstr "qaytarish muddatini kiriting"
+
+msgid "telnomer"
+msgstr "Telefon nomer*"
+
+msgid "ishorni"
+msgstr "Yaratiladigan ish o'rni"
+
+msgid "forinter"
+msgstr "Tadbirkorlik faoliyati uchun"
+
+msgid "murojat"
+msgstr "Murojat matni *"
+
+msgid "qarzmaqsadi"
+msgstr "Xamkorlik qilishdan maqsadingiz"
+
+msgid "keynumber"
+msgstr "Kalit raqami*"
+
+msgid "enterkey"
+msgstr "Kalit raqamini kiriting"
+
+msgid "chiqish"
+msgstr "Chiqish"
+
+msgid "companyName"
+msgstr "Tashkilot nomi*"
+
+msgid "yuridikadres"
+msgstr "Yuridik manzil*"
+
+msgid "mfo"
+msgstr "MFO:*"
+
+msgid "inn"
+msgstr "INN*"
+
+msgid "hisobraqam"
+msgstr "Hisob raqami*"
+
+msgid "socialnet"
+msgstr "Bizni ijtimoiy tarmoqlarda kuzatib boring"
+
+msgid "beruniy"
+msgstr "Beruniy-avlodlari"
+
+msgid "UXB"
+msgstr "UXB"
+
+msgid "savollar"
+msgstr "Biz har qanday savollarga javob beramiz"
+
+msgid "boglanish"
+msgstr "Biz bilan bog'lanish"
+
+msgid "manzil"
+msgstr "MANZIL"
+
+msgid "ouraddress"
+msgstr "Qoraqalpog'iston Respublikasi Beruniy Shahri,Xalqlar do'stligi ko'chasi,6A uy"
+
+msgid "xarita"
+msgstr "Google xarita orqali borish"
+
+msgid "workplan"
+msgstr "ISH REJASI"
+
+msgid "ishsoati"
+msgstr "DU.-SHA. 9:00 dan 18:00 gacha"
+
+msgid "yakshanba"
+msgstr "Yakshanba dam olish kuni"
+
+msgid "tel"
+msgstr "TELEFON"
+
+msgid "adres"
+msgstr "Beruniy Tumani,Fayozov ko'chasi"
+
+msgid "ofis"
+msgstr "Bizning tashkilot"
+
+msgid "online"
+msgstr "YURIDIK SHAXSLAR UCHUN QULAY SHARTLARDA ONLINE XAMKORLIK QILING"
+
+msgid "xamkor"
+msgstr "XAMKORLIK QILING"
+
+msgid "upTo2mlrd"
+msgstr "2 milliard so'mgacha"
+
+msgid "fermer"
+msgstr "Fermer xo'jaliklari: qishloq xo'jalik texnikalari, Issiq xonalar, muzlatkich uskunalari, maxsulotlarini  qayta ishlash    asbob-uskunalar  xarid qilish        uchun 100 000 000 (yuz million) so'mdan 1 000 000 000 (1 milliard) so'mgacha 3 yildan - 10 yilgacha Fond  mablag‘laridan  foydalaning"
+
+msgid "forBuilding"
+msgstr "Tadbirkorlik faoliyatini amalga oshirish maqsadida bino va inshotlar sotib olish uchun 1 000 000 (bir million) so'mdan 400 000 000 (to'rt yuz million) so'mgacha 3 yildan - 10 yilgacha  bo'lgan muddatga fond  mablag`laridan  foydalaning"
+
+msgid "avtomobil"
+msgstr "Fond  mablag‘laridan  Yakka tartibdagi tadbirkorlik faoliyatini amalga oshirish maqsadida avtomobil xarid qilish uchun 1 000 000 (bir million) so'mdan 200 000 000 (ikki yuz million) so'mgacha 3 yilga foydalaning"
+
+msgid "uyjoy"
+msgstr "Fond mablag‘laridan 100 000 000 (yuz million) so‘mdan 400 000 000 (to‘rt yuz million) so‘mgacha 10 yil muddatga yakka tartibdagi uy-joy qurish uchun foydalanish"
+
+msgid "asbobuskuna"
+msgstr "Fondning  1 000 000 (bir million) so‘mdan 1 000 000 000 (bir milliard) so‘mgacha bo‘lgan mablag‘laridan tadbirkorlik faoliyati uchun asbob-uskunalar xarid qilish uchun 3 yildan 10 yilgacha muddatga foydalanish."
+
+msgid "auksion"
+msgstr "Yakka tartibdagi auksion savdoda yer uchastkalarini xarid qilish uchun 1 000 000 (bir million) so'mdan 400 000 000 (to'rt yuz million) so'mgacha 3 yildan - 10 yilgacha fond  mablag`laridan  foydalaning"
+
+msgid "imoratlar"
+msgstr "Fondning  1 000 000 (bir million) so‘mdan 1 000 000 000 (bir milliard) so‘mgacha bo‘lgan mablag‘laridan 5 yildan 10 yilgacha yakka tartibdagi tadbirkorlik faoliyatini amalga oshirish maqsadida bino va inshootlar qurish uchun foydalanish."
+
+msgid "student"
+msgstr "Fond  mablag‘laridan 10 yil muddatga oliy o‘quv yurtlari, texnikum va kasb-hunar ta’limi muassasalari talabalarining  (kontrakt)  shartnomalarini    to‘lash uchun foydalaning."
+
+msgid "upTo20mln"
+msgstr "20 million so'mgacha"
+
+msgid "taxi"
+msgstr "Fond  mablag‘laridan  yuridik shaxs tashkil qilgan xolda taksi faoliyati uchun 1 000 000 (bir million) so‘mdan 1 000 000 000 (bir milliard) so‘mgacha 3 yildan 10 yilgacha bo`lgan muddatga foydalanish."
+
+msgid "jismoniy"
+msgstr "JISMONIY SHAXSLAR UCHUN QULAY SHARTLARDA ONLINE XAMKORLIK QILING"
+
+msgid "royhatdanotish"
+msgstr "Ro'yhatdan o'tish"
+
+msgid "success"
+msgstr "Ro`yhatdan muvaffaqiyatli o`tdingiz! Kalit telefoningizga yuborildi"
+
+msgid "kirish"
+msgstr "Kirish"
+
+msgid "registr"
+msgstr "Ro'yhatdan o'tish pullik. Narxi:"
+
+msgid "som"
+msgstr "so'm"
+
+msgid "fullName"
+msgstr "To'liq ismingiz"
+
+msgid "telnumber"
+msgstr "Telefon raqamingiz"
+
+msgid "mavjud"
+msgstr "Bunday telefon raqami mavjud"
+
+msgid "createpassword"
+msgstr "Parol yarating"
+
+msgid "accept"
+msgstr "Parolni tasdiqlang"
+
+msgid "shartlar"
+msgstr "Men barcha foydalanish"
+
+msgid "qabul"
+msgstr "shartlarni"
+
+msgid "qildim"
+msgstr "qabul qildim"
+
+msgid "tasdiqlash"
+msgstr "Tasdiqlang!"
+
+msgid "payment"
+msgstr "To'lovni amalga oshirganingizdan so'ng sizga maxsus kod yuboriladi!"
+
+msgid "paymentSuccess"
+msgstr "muvaffaqiyatli!"
+
+msgid "paymentCode"
+msgstr "To'lovni amalga oshirganingizdan so'ng arizangiz qabul qilinadi!"
+
+msgid "click"
+msgstr "CLICK orqali to'lash"
+

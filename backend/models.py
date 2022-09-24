@@ -8,7 +8,7 @@ from django.contrib.auth.models import AbstractUser, UserManager
 
 def generate_key():
     key = str()
-    for _ in range(16):
+    for _ in range(6):
         key += random.choice(string.ascii_lowercase + string.digits)
 
     return key
@@ -16,6 +16,7 @@ def generate_key():
 
 class User(AbstractUser):
     users = UserManager()
+    phone_number = models.CharField(max_length=16)
     key = models.CharField(max_length=16, default=generate_key)
 
 
@@ -24,6 +25,7 @@ class IndividualRequest(models.Model):
     full_name = models.CharField(max_length=255)
     birth_day = models.DateField()
     region = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     street = models.CharField(max_length=255)
     street_number = models.CharField(max_length=255)
@@ -58,4 +60,21 @@ class EntityRequest(models.Model):
 
 
 class Payment(BasePayment):
-    pass
+    individual_request = models.ForeignKey(
+        IndividualRequest,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+    )
+    entity_request = models.ForeignKey(
+        EntityRequest,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+    )
+    user = models.ForeignKey(
+        to=User,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+    )

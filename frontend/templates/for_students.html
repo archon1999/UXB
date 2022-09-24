@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
 Talabalarga kontrakt pullarini to'lshlari uchun
@@ -10,27 +11,20 @@ Talabalarga kontrakt pullarini to'lshlari uchun
     <div class="containerr">
         <div class="buil__content">
             <div class="buil__head">
-                <p class="build__title">
-                    Oliy ta'lim muassasalari,texnikumlar,kasb-hunar maktablari talabalarining shartnoma (kontrakt)
-                    to'lovlarini amalga oshirish uchun qulay shartlarda
-                    <span style="color: #0069db">10 yilgacha </span>qarz oling
-                </p>
+                <p class="build__title">{% trans 'student' %}</p>
                 <div class="char-block__build">
                     <p class="char__build">
-                        <span>Taklif</span><br />
-                        <font>0%(foizsiz)</font>
+                        <span>{% trans 'offer' %}</span><br />
+                        <font>0%{% trans 'foizsiz' %}</font>
                     </p>
                     <p class="char__build">
-                        <span>Pul</span><br />
-                        <font>10 million so'mgacha</font>
+                        <span>{% trans 'money' %}</span><br />
+                        <font>{% trans 'upTo20mln' %}</font>
                     </p>
                 </div>
-                <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Qarz olish
-                </button>
+                <button type="button" data-btn="" class="buildBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">{% trans 'apply' %}</button>
             </div>
-            <img class="buildimg" src="/static/images/xizmatlar-images/head-bus4.png" />
+            <img class="buildimg" src="/static/images/xizmatlar-images/head-bus3.png" />
         </div>
     </div>
 </section>

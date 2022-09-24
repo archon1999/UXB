@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+Universal Xizmatlar Byurosi
+{% endblock %}
+
+{% block content %}
+{% if payment.status == PaymentStatus.CONFIRMED %}
+<div class="alert alert-success" role="alert">
+    {% trans 'paymentSuccess' %}
+</div>
+{% else %}
+
+{% if payment.user %}
+<h5 class="text-center text-warning mt-4 mb-2">
+    {% trans 'payment'%}    
+    <form class="mt-3" id="click_form" action="https://my.click.uz/services/pay" method="get" target="_blank">
+        <input type="hidden" name="amount" value="{{ payment_value }}" />
+        <input type="hidden" name="merchant_id" value="17332"/>
+        <input type="hidden" name="merchant_user_id" value="27867"/>
+        <input type="hidden" name="service_id" value="24855"/>
+        <input type="hidden" name="transaction_param" value="{{ payment.id }}"/>
+        <input type="hidden" name="return_url" value="http://193.164.17.14:8001/request_payment/{{ payment.id }}"/>
+        <button type="submit" class="click_logo">CLICK orqali to'lash</button>
+    </form>
+</h5>
+{% else %}
+<h5 class="text-center text-warning mt-4 mb-2">
+    {% trans 'paymentCode' %}
+    
+    <form class="mt-3" id="click_form" action="https://my.click.uz/services/pay" method="get" target="_blank">
+        <input type="hidden" name="amount" value="{{ payment_value }}" />
+        <input type="hidden" name="merchant_id" value="17332"/>
+        <input type="hidden" name="merchant_user_id" value="27867"/>
+        <input type="hidden" name="service_id" value="24855"/>
+        <input type="hidden" name="transaction_param" value="{{ payment.id }}"/>
+        <input type="hidden" name="return_url" value="http://193.164.17.14:8001/request_payment/{{ payment.id }}"/>
+        <button type="submit" class="click_logo">{% trans 'click' %}</button>
+    </form>
+</h5>
+{% endif %}  
+{% endif %}
+
+{% include 'our_product_section.html' %}
+
+{% endblock %}
